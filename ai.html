@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Research - Lars Fritz</title>
-  <!-- Link to Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Gradient background and text styling */
+    /* Full background image styling */
     body {
       font-family: Arial, sans-serif;
       color: #fff;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #f0f0f0, #bdbdbd);
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg/1920px-Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg') no-repeat center center fixed;
+      background-size: cover;
       position: relative;
       min-height: 100vh; /* Ensure body takes full height */
       text-align: center;
-      overflow: hidden; /* Prevent scrolling caused by large background image */
     }
 
     /* Container styling */
@@ -28,8 +26,6 @@
       padding: 20px;
       position: relative;
       z-index: 1; /* Ensure container is above background */
-      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
-      border-radius: 10px; /* Rounded corners */
     }
 
     /* Styling for the title */
@@ -60,14 +56,13 @@
       font-weight: bold;
     }
 
-    /* Large AI image styling */
+    /* AI-themed image at the bottom */
     .ai-image {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 100vh; /* Full viewport height */
-      object-fit: cover; /* Cover the entire area */
+      height: auto;
       opacity: 0.1; /* Very light color */
       z-index: 0; /* Ensure it is behind the content */
     }
@@ -99,8 +94,5 @@
 
     <a href="index.html" class="back-link">Back to Home</a>
   </div>
-
-  <!-- AI-themed image at the bottom -->
-  <img src="https://your-image-url.com/path-to-ai-background.jpg" alt="AI Image" class="ai-image">
 </body>
 </html>
