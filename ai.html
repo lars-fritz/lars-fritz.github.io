@@ -35,11 +35,11 @@
       margin: 0 auto;
       padding: 20px;
       text-align: justify; /* Justify text for a more formal look */
-      background: #f3f2ef; /* Light grey background for container */
-      border-radius: 10px; /* Rounded corners */
+      background: transparent; /* Removed background to remove box effect */
+      border-radius: 0; /* Removed border-radius for no box effect */
       position: relative;
       z-index: 1;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+      box-shadow: none; /* Removed shadow */
     }
 
     /* Headings */
@@ -254,11 +254,6 @@
         <i class="fas fa-home"></i>
       </a>
     </div>
-
-    <!-- Back to Home Button -->
-    <a href="https://lars-fritz.github.io/index.html" class="back-to-home">
-      <i class="fas fa-home"></i> Back to Home
-    </a>
   </div>
 
   <!-- Night mode toggle button -->
