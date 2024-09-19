@@ -263,4 +263,21 @@
   </div>
 
   <!-- Night mode toggle button -->
-  <button class="theme-toggle" onclick="toggleTheme
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i> Toggle Theme
+  </button>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      if (body.classList.contains('day')) {
+        body.classList.remove('day');
+        body.classList.add('night');
+      } else {
+        body.classList.remove('night');
+        body.classList.add('day');
+      }
+    }
+  </script>
+</body>
+</html>
