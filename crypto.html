@@ -83,6 +83,31 @@
       opacity: 0.1; /* Very light color */
       z-index: 0; /* Ensure it is behind the content */
     }
+
+    /* Back to Home Button Styling */
+    .back-to-home {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .back-to-home i {
+      margin-right: 5px;
+    }
+
+    .back-to-home:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
@@ -115,6 +140,11 @@
       </a>
     </div>
   </div>
+
+  <!-- Back to Home Button -->
+  <a href="https://lars-fritz.github.io/index.html" class="back-to-home">
+    <i class="fas fa-home"></i> Back to Home
+  </a>
 
   <!-- Large Bitcoin sign at the bottom -->
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Sign" class="bitcoin-sign">
