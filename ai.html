@@ -10,7 +10,7 @@
     /* Default (Day) theme styles */
     body.day {
       font-family: Arial, sans-serif;
-      color: #fff;
+      color: #000; /* Black text */
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom right, #E0F7FA, #FAF0E6);
@@ -22,10 +22,10 @@
     /* Night theme styles */
     body.night {
       font-family: Arial, sans-serif;
-      color: #fff;
+      color: #fff; /* White text */
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #000000, #333333);
+      background: linear-gradient(to bottom right, #002f6c, #001f3f); /* Dark blue gradient */
       position: relative;
       min-height: 100vh; /* Ensure body takes full height */
       text-align: center;
@@ -39,7 +39,13 @@
       padding: 20px;
       position: relative;
       z-index: 1; /* Ensure container is above background */
-      /* Removed background and border-radius */
+      background: rgba(255, 255, 255, 0.8); /* Light background for text readability in day mode */
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Night mode container background */
+    body.night .container {
+      background: rgba(0, 0, 0, 0.6); /* Darker background for night mode */
     }
 
     /* Styling for the title */
@@ -65,7 +71,7 @@
 
     ul li a {
       text-decoration: none;
-      color: #fff;
+      color: inherit; /* Inherit color from body (black or white) */
       font-size: 18px;
       font-weight: bold;
     }
