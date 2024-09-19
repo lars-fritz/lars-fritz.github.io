@@ -7,7 +7,7 @@
   <!-- Link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Background image styling with multiple logos */
+    /* Background image styling with cryptocurrency logos at the bottom */
     body {
       font-family: Arial, sans-serif;
       color: #fff;
@@ -27,6 +27,7 @@
       background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better text readability */
       border-radius: 10px; /* Rounded corners */
       position: relative;
+      z-index: 1; /* Ensure container is above background */
     }
 
     /* Styling for the title */
@@ -77,42 +78,26 @@
     /* Cryptocurrency logo styling */
     .crypto-logos {
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
-      z-index: -1; /* Behind content */
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      z-index: 0; /* Ensure logos are behind content */
     }
 
     .crypto-logos img {
-      position: absolute;
-      opacity: 0.2; /* Very light color */
-      width: 100px; /* Adjust size as needed */
+      opacity: 0.3; /* Very light color */
+      width: 60px; /* Adjust size as needed */
       height: auto;
     }
-
-    /* Positioning logos */
-    .logo-bitcoin { top: 10px; left: 10px; }
-    .logo-ethereum { top: 10px; left: 130px; }
-    .logo-matic { top: 10px; left: 250px; }
-    .logo-solana { top: 10px; left: 370px; }
-    .logo-usdt { top: 10px; left: 490px; }
-    .logo-usdc { top: 10px; left: 610px; }
-    .logo-arbitrum { top: 10px; left: 730px; }
   </style>
 </head>
 <body>
-  <div class="crypto-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" class="logo-bitcoin">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum_logo_2014.svg" alt="Ethereum Logo" class="logo-ethereum">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Polygon_logo.png" alt="Matic Logo" class="logo-matic">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Solana_logo.png" alt="Solana Logo" class="logo-solana">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Tether-logo.png" alt="USDT Logo" class="logo-usdt">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/USD_Coin_logo.png" alt="USDC Logo" class="logo-usdc">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Arbitrum_Logo.png" alt="Arbitrum Logo" class="logo-arbitrum">
-  </div>
-
   <div class="container">
     <h1>Things Crypto</h1>
     
@@ -141,6 +126,20 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
+  </div>
+
+  <!-- Cryptocurrency logos section -->
+  <div class="crypto-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum_logo_2014.svg" alt="Ethereum Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Polygon_logo.png" alt="Polygon (Matic) Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Solana_logo.png" alt="Solana Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Tether-logo.png" alt="Tether (USDT) Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/USD_Coin_logo.png" alt="USD Coin (USDC) Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Arbitrum_Logo.png" alt="Arbitrum Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Chainlink_logo.png" alt="Chainlink Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Cosmos_logo.png" alt="Cosmos Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Aave_Logo.svg" alt="Aave Logo">
   </div>
 </body>
 </html>
