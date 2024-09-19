@@ -7,98 +7,49 @@
   <!-- Link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Light theme (LinkedIn style) */
-    body.day {
-      font-family: Arial, sans-serif;
-      color: #333333; /* Dark grey text */
+    /* Universal Reset */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #ffffff; /* White background */
-      position: relative;
-      min-height: 100vh; /* Ensure body takes full height */
-      text-align: center;
+      box-sizing: border-box;
     }
 
-    /* Light mode heading colors */
-    h1, h2, h3 {
-      color: #212121; /* Darker grey for headings */
+    /* Default theme styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* LinkedIn style for links and accents */
-    a {
-      color: #0a66c2; /* LinkedIn blue for links */
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline; /* Underline on hover */
-    }
-
-    /* Light theme container background */
+    /* Container styling */
     .container {
       width: 90%;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      background: #f3f2ef; /* Light grey background for container (similar to LinkedIn) */
-      border-radius: 10px; /* Rounded corners */
-    }
-
-    /* Social icons color in light mode */
-    .social-icons a {
-      color: #333333;
-    }
-
-    /* Dark theme (Thena.fi style) */
-    body.night {
-      font-family: Arial, sans-serif;
-      color: #e0e0e0; /* Light gray text */
-      margin: 0;
-      padding: 0;
-      background-color: #1e1e1e; /* Dark grey background */
-      position: relative;
-      min-height: 100vh; /* Ensure body takes full height */
       text-align: center;
+      transition: all 0.3s ease;
     }
 
-    /* Dark mode heading colors */
-    body.night h1, 
-    body.night h2, 
-    body.night h3 {
-      color: #e0e0e0; /* Light grey headings */
-    }
-
-    /* Dark mode container background */
-    body.night .container {
-      background: #2b2b2b; /* Darker container for night mode */
-    }
-
-    /* Text and link color adjustments for dark mode */
-    body.night a {
-      color: #0d6efd; /* Blue link in dark mode */
-    }
-
-    /* Social icons color in dark mode */
-    body.night .social-icons a {
-      color: #e0e0e0;
-    }
-
-    /* Shared container styling */
-    .container {
-      border-radius: 10px;
-    }
-
-    /* Styling for the title */
+    /* Headings */
     h1 {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      transition: color 0.3s ease;
     }
 
-    /* Styling for the text section */
+    /* Styling for text section */
     .text-section {
       margin-bottom: 40px;
+      transition: color 0.3s ease;
     }
 
-    /* Styling for the social icons */
+    /* Social media icons */
     .social-icons {
       margin-top: 20px;
     }
@@ -107,19 +58,64 @@
       text-decoration: none;
       margin: 0 10px;
       font-size: 30px;
+      transition: color 0.3s ease;
     }
 
-    .social-icons a:hover {
-      color: #f0f0f0;
+    /* Day theme styles */
+    body.day {
+      background-color: #ffffff;
+      color: #333333;
     }
 
-    /* Back to Home Button Styling (ALWAYS LinkedIn blue) */
+    body.day h1 {
+      color: #212121;
+    }
+
+    body.day a {
+      color: #0a66c2;
+    }
+
+    body.day a:hover {
+      text-decoration: underline;
+    }
+
+    body.day .social-icons a {
+      color: #333;
+    }
+
+    body.day .social-icons a:hover {
+      color: #0073b1;
+    }
+
+    /* Night theme styles */
+    body.night {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    body.night h1 {
+      color: #e0e0e0;
+    }
+
+    body.night a {
+      color: #0d6efd;
+    }
+
+    body.night .social-icons a {
+      color: #e0e0e0;
+    }
+
+    body.night .social-icons a:hover {
+      color: #0d6efd;
+    }
+
+    /* Back to Home Button Styling (consistent in both modes) */
     .back-to-home {
       position: fixed;
-      bottom: 60px; /* Adjusted to fit both buttons */
+      bottom: 60px;
       right: 20px;
-      background-color: #0a66c2; /* LinkedIn blue */
-      color: #ffffff; /* White text */
+      background-color: #0a66c2;
+      color: #ffffff;
       border: none;
       border-radius: 5px;
       padding: 10px 15px;
@@ -127,8 +123,9 @@
       text-decoration: none;
       display: flex;
       align-items: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for visibility */
-      z-index: 1000; /* Ensure it stays above content */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
     }
 
     .back-to-home i {
@@ -137,15 +134,16 @@
 
     .back-to-home:hover {
       background-color: #084482;
+      text-decoration: none;
     }
 
-    /* Toggle Button for dark mode (changes in dark mode) */
+    /* Theme toggle button */
     .theme-toggle {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #0a66c2; /* LinkedIn blue in light mode */
-      color: #ffffff; /* White text */
+      background-color: #0a66c2;
+      color: #fff;
       border: none;
       border-radius: 5px;
       padding: 10px 15px;
@@ -154,8 +152,9 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow */
-      z-index: 1000; /* Ensure it's above content */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      z-index: 1000;
     }
 
     .theme-toggle i {
@@ -164,15 +163,6 @@
 
     .theme-toggle:hover {
       background-color: #084482;
-    }
-
-    /* Dark mode button hover */
-    body.night .theme-toggle {
-      background-color: #0d6efd; /* Blue toggle button in dark mode */
-    }
-
-    body.night .theme-toggle:hover {
-      background-color: #0a58ca; /* Darker blue hover for toggle */
     }
   </style>
 </head>
@@ -220,13 +210,8 @@
   <script>
     function toggleTheme() {
       const body = document.body;
-      if (body.classList.contains('day')) {
-        body.classList.remove('day');
-        body.classList.add('night');
-      } else {
-        body.classList.remove('night');
-        body.classList.add('day');
-      }
+      body.classList.toggle('night');
+      body.classList.toggle('day');
     }
   </script>
 </body>
