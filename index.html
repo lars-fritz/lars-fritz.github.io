@@ -4,15 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Home</title>
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; }
-    a { text-decoration: none; color: #333; }
+    /* Gradient background and text styling */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f0f0f0, #bdbdbd);
+      text-align: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Styling for the navigation links */
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+    }
+
+    /* Social media icons styling */
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 10px;
+      font-size: 30px;
+    }
+
+    /* Styling for hover effect on social icons */
+    .social-icons a:hover {
+      color: #0073b1; /* LinkedIn color */
+    }
+
+    /* Email icon hover effect */
+    .social-icons a.email:hover {
+      color: #d93025; /* Gmail color */
+    }
   </style>
 </head>
 <body>
   <h1>Welcome to My Personal Website</h1>
   <p>Hi, I’m [Your Name], a professor of theoretical physics with a passion for quantum physics, cryptocurrency research, and artificial intelligence.</p>
-  
+
   <nav>
     <ul>
       <li><a href="quantum.html">Quantum Physics</a></li>
@@ -20,5 +73,16 @@
       <li><a href="ai.html">Artificial Intelligence</a></li>
     </ul>
   </nav>
+
+  <!-- Social icons section -->
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/lars-fritz-6b96639/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:l.fritz@uu.nl" title="Email" class="email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
 </body>
 </html>
+
