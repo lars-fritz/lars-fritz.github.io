@@ -88,7 +88,7 @@
 
     .social-icons a {
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 15px;
       font-size: 30px;
       color: #333; /* Default icon color */
       transition: color 0.3s ease;
@@ -99,7 +99,7 @@
     }
 
     /* Home icon styling */
-    .back-to-home-icon {
+    .home-icon {
       background-color: #0a66c2; /* Background color to match buttons */
       color: #ffffff; /* Icon color */
       border-radius: 50%; /* Rounded shape */
@@ -112,57 +112,9 @@
       transition: background-color 0.3s ease;
     }
 
-    .back-to-home-icon:hover {
+    .home-icon:hover {
       color: #ffffff; /* Maintain icon color on hover */
       background-color: #084482; /* Darker shade on hover */
-    }
-
-    /* Day theme styles */
-    body.day {
-      background-color: #ffffff;
-      color: #333333;
-    }
-
-    body.day h1 {
-      color: #212121;
-    }
-
-    body.day a {
-      color: #0a66c2;
-    }
-
-    body.day a:hover {
-      text-decoration: underline;
-    }
-
-    body.day .social-icons a {
-      color: #333;
-    }
-
-    body.day .social-icons a:hover {
-      color: #0073b1;
-    }
-
-    /* Night theme styles */
-    body.night {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
-    }
-
-    body.night h1 {
-      color: #e0e0e0;
-    }
-
-    body.night a {
-      color: #0d6efd;
-    }
-
-    body.night .social-icons a {
-      color: #e0e0e0;
-    }
-
-    body.night .social-icons a:hover {
-      color: #0d6efd;
     }
 
     /* Back to Home Button Styling */
@@ -250,6 +202,19 @@
         <li><a href="https://scholar.google.com">Google Scholar</a></li>
         <li><a href="https://orcid.org">ORCID</a></li>
       </ul>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://twitter.com/yourusername" class="home-icon" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" class="home-icon" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/yourusername" class="home-icon" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </div>
 
     <!-- Back to Home Button -->
