@@ -128,7 +128,7 @@
       bottom: 60px; /* Adjusted to fit both buttons */
       right: 20px;
       background-color: #0a66c2; /* LinkedIn blue for light mode */
-      color: #fff;
+      color: #ffffff; /* White text */
       border: none;
       border-radius: 5px;
       padding: 10px 15px;
@@ -154,7 +154,7 @@
       bottom: 20px;
       right: 20px;
       background-color: #0a66c2; /* LinkedIn blue button for light mode */
-      color: #fff;
+      color: #ffffff; /* White text */
       border: none;
       border-radius: 5px;
       padding: 10px 15px;
@@ -177,10 +177,20 @@
     /* Button for the night mode will have a blue accent */
     body.night .back-to-home {
       background-color: #0d6efd; /* Blue back to home button in dark mode */
+      color: #ffffff; /* Ensure text remains white */
     }
 
     body.night .back-to-home:hover {
       background-color: #0a58ca; /* Hover effect for the back to home button */
+    }
+
+    body.night .theme-toggle {
+      background-color: #0d6efd; /* Blue toggle button in dark mode */
+      color: #ffffff; /* Ensure text remains white */
+    }
+
+    body.night .theme-toggle:hover {
+      background-color: #0a58ca; /* Hover effect for the toggle button */
     }
   </style>
 </head>
