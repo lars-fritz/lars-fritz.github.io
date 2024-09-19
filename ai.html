@@ -94,6 +94,10 @@
       outline: none; /* Remove default focus outline */
     }
 
+    .back-to-home-icon:focus {
+      outline: none; /* Ensure no outline on focus */
+    }
+
     .back-to-home-icon:hover {
       color: #ffffff; /* Maintain icon color on hover */
       background-color: #084482; /* Darker shade on hover */
@@ -259,21 +263,4 @@
   </div>
 
   <!-- Night mode toggle button -->
-  <button class="theme-toggle" onclick="toggleTheme()">
-    <i class="fas fa-moon"></i> Toggle Theme
-  </button>
-
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      if (body.classList.contains('day')) {
-        body.classList.remove('day');
-        body.classList.add('night');
-      } else {
-        body.classList.remove('night');
-        body.classList.add('day');
-      }
-    }
-  </script>
-</body>
-</html>
+  <button class="theme-toggle" onclick="toggleTheme
