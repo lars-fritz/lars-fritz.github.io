@@ -7,13 +7,25 @@
   <!-- Link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Gradient background and text styling */
-    body {
+    /* Default (Day) theme styles */
+    body.day {
       font-family: Arial, sans-serif;
-      color: #333;
+      color: #fff;
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom right, #E0F7FA, #FAF0E6);
+      position: relative;
+      min-height: 100vh; /* Ensure body takes full height */
+      text-align: center;
+    }
+
+    /* Night theme styles */
+    body.night {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #000000, #333333);
       position: relative;
       min-height: 100vh; /* Ensure body takes full height */
       text-align: center;
@@ -72,7 +84,7 @@
     /* Styling for the back to home link */
     .back-to-home {
       position: fixed;
-      bottom: 20px;
+      bottom: 60px; /* Adjusted to fit both buttons */
       right: 20px;
       background-color: #333;
       color: #fff;
@@ -93,9 +105,35 @@
     .back-to-home:hover {
       background-color: #555;
     }
+
+    /* Night mode toggle button */
+    .theme-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .theme-toggle i {
+      margin-right: 5px;
+    }
+
+    .theme-toggle:hover {
+      background-color: #555;
+    }
   </style>
 </head>
-<body>
+<body class="day">
   <div class="container">
     <h1>Artificial Intelligence Research</h1>
     <div class="text-section">
@@ -118,5 +156,23 @@
 
   <!-- AI-themed image at the bottom -->
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg" alt="AI Image" class="ai-image">
+
+  <!-- Night mode toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i> Toggle Theme
+  </button>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      if (body.classList.contains('day')) {
+        body.classList.remove('day');
+        body.classList.add('night');
+      } else {
+        body.classList.remove('night');
+        body.classList.add('day');
+      }
+    }
+  </script>
 </body>
 </html>
