@@ -84,12 +84,14 @@
       color: #ffffff; /* Icon color */
       border-radius: 50%; /* Rounded shape */
       padding: 10px; /* Adjust padding for better appearance */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+      box-shadow: none; /* Remove shadow to eliminate blue circle effect */
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 10px;
       transition: background-color 0.3s ease;
+      text-decoration: none; /* Ensure no underline on links */
+      outline: none; /* Remove default focus outline */
     }
 
     .back-to-home-icon:hover {
