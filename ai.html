@@ -19,13 +19,13 @@
       text-align: center;
     }
 
-    /* Night theme styles */
+    /* Night theme styles (Matching Thena.fi's dark mode) */
     body.night {
       font-family: Arial, sans-serif;
-      color: #fff; /* White text */
+      color: #e0e0e0; /* Light gray text */
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #002f6c, #001f3f); /* Dark blue gradient */
+      background-color: #1e1e1e; /* Dark grey background */
       position: relative;
       min-height: 100vh; /* Ensure body takes full height */
       text-align: center;
@@ -45,7 +45,7 @@
 
     /* Night mode container background */
     body.night .container {
-      background: rgba(0, 0, 0, 0.6); /* Darker background for night mode */
+      background: #2b2b2b; /* Darker container for night mode */
     }
 
     /* Styling for the title */
@@ -117,7 +117,7 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #333;
+      background-color: #0d6efd; /* Blue button for dark mode */
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -135,7 +135,27 @@
     }
 
     .theme-toggle:hover {
-      background-color: #555;
+      background-color: #0a58ca; /* Darker blue on hover */
+    }
+
+    /* Text and link color adjustments */
+    body.night a {
+      color: #0d6efd; /* Blue link in night mode */
+    }
+
+    /* Adjusted for accent colors in night mode */
+    body.night .text-section p,
+    body.night ul li a {
+      color: #b3b3b3; /* Lighter gray text for readability */
+    }
+
+    /* Button for the night mode will have a blue accent */
+    body.night .back-to-home {
+      background-color: #0d6efd; /* Blue back to home button in dark mode */
+    }
+
+    body.night .back-to-home:hover {
+      background-color: #0a58ca; /* Hover effect for the back to home button */
     }
   </style>
 </head>
