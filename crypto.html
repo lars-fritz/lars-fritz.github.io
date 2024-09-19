@@ -7,14 +7,15 @@
   <!-- Link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Background image styling */
+    /* Background image styling with multiple logos */
     body {
       font-family: Arial, sans-serif;
       color: #fff;
       margin: 0;
       padding: 0;
-      background: url('https://example.com/path-to-your-bitcoin-image.jpg') no-repeat center center fixed;
+      background: url('https://example.com/path-to-your-background-image.jpg') no-repeat center center fixed;
       background-size: cover;
+      position: relative;
     }
 
     /* Container styling */
@@ -73,20 +74,47 @@
       color: #f0f0f0; /* Lighten on hover */
     }
 
-    /* Bitcoin sign styling */
-    .bitcoin-sign {
+    /* Cryptocurrency logo styling */
+    .crypto-logos {
       position: absolute;
-      bottom: 10px;
-      right: 10px;
-      opacity: 0.1; /* Very light color */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+      z-index: -1; /* Behind content */
+    }
+
+    .crypto-logos img {
+      position: absolute;
+      opacity: 0.2; /* Very light color */
       width: 100px; /* Adjust size as needed */
       height: auto;
     }
+
+    /* Positioning logos */
+    .logo-bitcoin { top: 10px; left: 10px; }
+    .logo-ethereum { top: 10px; left: 130px; }
+    .logo-matic { top: 10px; left: 250px; }
+    .logo-solana { top: 10px; left: 370px; }
+    .logo-usdt { top: 10px; left: 490px; }
+    .logo-usdc { top: 10px; left: 610px; }
+    .logo-arbitrum { top: 10px; left: 730px; }
   </style>
 </head>
 <body>
+  <div class="crypto-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" class="logo-bitcoin">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum_logo_2014.svg" alt="Ethereum Logo" class="logo-ethereum">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Polygon_logo.png" alt="Matic Logo" class="logo-matic">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Solana_logo.png" alt="Solana Logo" class="logo-solana">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Tether-logo.png" alt="USDT Logo" class="logo-usdt">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/USD_Coin_logo.png" alt="USDC Logo" class="logo-usdc">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Arbitrum_Logo.png" alt="Arbitrum Logo" class="logo-arbitrum">
+  </div>
+
   <div class="container">
-    <h1>Things crypto</h1>
+    <h1>Things Crypto</h1>
     
     <div class="text-section">
       <p>An Automated Market Maker (AMM) is a type of decentralized exchange protocol that uses mathematical formulas to price assets. Instead of relying on order books, AMMs use liquidity pools and algorithms to determine prices. These pools are funded by liquidity providers who deposit pairs of assets into the pool. The AMM then uses a formula to set prices based on the ratio of the assets in the pool, allowing for automated and continuous trading without the need for a traditional market maker.</p>
@@ -113,9 +141,6 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
-    
-    <!-- Bitcoin sign -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Sign" class="bitcoin-sign">
   </div>
 </body>
 </html>
