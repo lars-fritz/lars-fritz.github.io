@@ -75,25 +75,20 @@
       color: #f0f0f0; /* Lighten on hover */
     }
 
-    /* Cryptocurrency logo styling */
+    /* Cryptocurrency logo styling with grid layout */
     .crypto-logos {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
-      padding: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
       gap: 10px;
-      z-index: 0; /* Ensure logos are behind content */
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
     }
 
     .crypto-logos img {
       opacity: 0.3; /* Very light color */
       width: 60px; /* Adjust size as needed */
       height: auto;
+      justify-self: center;
     }
   </style>
 </head>
@@ -132,14 +127,11 @@
   <div class="crypto-logos">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum_logo_2014.svg" alt="Ethereum Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Polygon_logo.png" alt="Polygon (Matic) Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Polygon_Matic_logo.png" alt="Polygon (Matic) Logo">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Solana_logo.png" alt="Solana Logo">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Tether-logo.png" alt="Tether (USDT) Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/USD_Coin_logo.png" alt="USD Coin (USDC) Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/USD_Coin_logo.png" alt="USD Coin (USDC) Logo">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Arbitrum_Logo.png" alt="Arbitrum Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Chainlink_logo.png" alt="Chainlink Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Cosmos_logo.png" alt="Cosmos Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Aave_Logo.svg" alt="Aave Logo">
   </div>
 </body>
 </html>
