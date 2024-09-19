@@ -59,6 +59,28 @@
       margin: 0 10px;
       font-size: 30px;
       transition: color 0.3s ease;
+      color: #333; /* Default icon color */
+    }
+
+    .social-icons a:hover {
+      color: #0073b1; /* Hover color for social icons */
+    }
+
+    /* Home icon styling */
+    .back-to-home-icon {
+      background-color: #0a66c2; /* Background color to match buttons */
+      color: #ffffff; /* Icon color */
+      border-radius: 50%; /* Rounded shape */
+      padding: 10px; /* Adjust padding for better appearance */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back-to-home-icon:hover {
+      color: #ffffff; /* Maintain icon color on hover */
+      background-color: #084482; /* Darker shade on hover */
     }
 
     /* Day theme styles */
@@ -109,41 +131,12 @@
       color: #0d6efd;
     }
 
-    /* Back to Home Button Styling */
-    .back-to-home {
-      position: fixed;
-      bottom: 60px;
-      right: 20px;
-      background-color: #0a66c2; /* Match the toggle button color */
-      color: #ffffff; /* Match the text color */
-      border: none;
-      border-radius: 5px;
-      padding: 10px 15px;
-      font-size: 18px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      transition: background-color 0.3s ease, color 0.3s ease;
-      z-index: 1000;
-    }
-
-    .back-to-home i {
-      margin-right: 5px;
-    }
-
-    .back-to-home:hover {
-      background-color: #084482; /* Darker shade on hover */
-      color: #ffffff; /* Maintain text color on hover */
-      text-decoration: none;
-    }
-
     /* Theme toggle button */
     .theme-toggle {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #0a66c2; /* Same color as the back-to-home button */
+      background-color: #0a66c2;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -163,7 +156,7 @@
     }
 
     .theme-toggle:hover {
-      background-color: #084482; /* Same hover color as the back-to-home button */
+      background-color: #084482;
     }
   </style>
 </head>
@@ -195,13 +188,11 @@
       <a href="https://github.com/yourusername" target="_blank" title="GitHub">
         <i class="fab fa-github"></i>
       </a>
+      <a href="https://lars-fritz.github.io/index.html" class="back-to-home-icon" title="Back to Home">
+        <i class="fas fa-home"></i>
+      </a>
     </div>
   </div>
-
-  <!-- Back to Home Button -->
-  <a href="https://lars-fritz.github.io/index.html" class="back-to-home">
-    <i class="fas fa-home"></i> Back to Home
-  </a>
 
   <!-- Night mode toggle button -->
   <button class="theme-toggle" onclick="toggleTheme()">
