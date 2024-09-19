@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Home</title>
+  <title>Lars Fritz - Home</title>
   <!-- Link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -22,6 +22,13 @@
       align-items: center;
     }
 
+    /* Container for centering and limiting width */
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
     /* Styling for the navigation links */
     nav ul {
       list-style: none;
@@ -29,8 +36,7 @@
     }
 
     nav ul li {
-      display: inline;
-      margin: 0 10px;
+      margin: 10px 0;
     }
 
     nav ul li a {
@@ -63,30 +69,32 @@
   </style>
 </head>
 <body>
-  <h1>Lars Fritz's personal research page</h1>
-  <p>Hi, I’m Lars Fritz, a professor of theoretical physics at Utrecht University (the Netherlands) with a passion for quantum physics, crypto, and artificial intelligence. 
-Beyond my professional interests, I have a deep love for everything that involves mathematics, computers, football, and BBQ. Whether it’s solving complex equations, coding simulations, enjoying a game on the pitch, or grilling up the perfect BBQ, my curiosity and enthusiasm extend across many domains of both science and leisure.</p>
+  <div class="container">
+    <h1>Lars Fritz's Personal Research Page</h1>
+    <p>Hi, I’m Lars Fritz, a professor of theoretical physics at Utrecht University (the Netherlands) with a passion for quantum physics, crypto, and artificial intelligence. 
+    Beyond my professional interests, I have a deep love for everything that involves mathematics, computers, football, and BBQ. Whether it’s solving complex equations, coding simulations, enjoying a game on the pitch, or grilling up the perfect BBQ, my curiosity and enthusiasm extend across many domains of both science and leisure.</p>
 
-<p>Below, you’ll find links to browse through my interests in quantum physics, cryptocurrency, artificial intelligence, and more. The BBQ section is still under construction, but stay tuned for updates!</p>
+    <p>Below, you’ll find links to browse through my interests in quantum physics, cryptocurrency, artificial intelligence, and more. The BBQ section is still under construction, but stay tuned for updates!</p>
 
+    <nav>
+      <ul>
+        <li><a href="quantum.html">Quantum Physics</a></li>
+        <li><a href="crypto.html">Cryptocurrency Research</a></li>
+        <li><a href="ai.html">Artificial Intelligence</a></li>
+      </ul>
+    </nav>
 
-  <nav>
-    <ul>
-      <li><a href="quantum.html">(Quantum) Physics</a></li>
-      <li><a href="crypto.html">Cryptical things</a></li>
-      <li><a href="ai.html">Artificially intelligent things</a></li>
-    </ul>
-  </nav>
-
-  <!-- Social icons section -->
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/lars-fritz-6b96639/" target="_blank" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="mailto:l.fritz@uu.nl" title="Email" class="email">
-      <i class="fas fa-envelope"></i>
-    </a>
+    <!-- Social icons section -->
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/lars-fritz-6b96639/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:l.fritz@uu.nl" title="Email" class="email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
   </div>
 </body>
 </html>
+
 
