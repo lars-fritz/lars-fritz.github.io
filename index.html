@@ -24,19 +24,31 @@
 
     /* Container for centering and limiting width */
     .container {
-      width: 80%;
-      max-width: 600px;
+      width: 90%;
+      max-width: 800px;
       margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Styling for the title */
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Styling for the text section */
+    .text-section {
+      margin-bottom: 40px;
     }
 
     /* Styling for the navigation links */
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     nav ul li {
-      margin: 10px 0;
+      margin: 15px 0;
     }
 
     nav ul li a {
@@ -71,10 +83,13 @@
 <body>
   <div class="container">
     <h1>Lars Fritz's Personal Research Page</h1>
-    <p>Hi, I’m Lars Fritz, a professor of theoretical physics at Utrecht University (the Netherlands) with a passion for quantum physics, crypto, and artificial intelligence. 
-    Beyond my professional interests, I have a deep love for everything that involves mathematics, computers, football, and BBQ. Whether it’s solving complex equations, coding simulations, enjoying a game on the pitch, or grilling up the perfect BBQ, my curiosity and enthusiasm extend across many domains of both science and leisure.</p>
+    
+    <div class="text-section">
+      <p>Hi, I’m Lars Fritz, a professor of theoretical physics at Utrecht University (the Netherlands) with a passion for quantum physics, crypto, and artificial intelligence. 
+      Beyond my professional interests, I have a deep love for everything that involves mathematics, computers, football, and BBQ. Whether it’s solving complex equations, coding simulations, enjoying a game on the pitch, or grilling up the perfect BBQ, my curiosity and enthusiasm extend across many domains of both science and leisure.</p>
 
-    <p>Below, you’ll find links to browse through my interests in quantum physics, cryptocurrency, artificial intelligence, and more. The BBQ section is still under construction, but stay tuned for updates!</p>
+      <p>Below, you’ll find links to browse through my interests in quantum physics, cryptocurrency, artificial intelligence, and more. The BBQ section is still under construction, but stay tuned for updates!</p>
+    </div>
 
     <nav>
       <ul>
@@ -96,5 +111,4 @@
   </div>
 </body>
 </html>
-
 
