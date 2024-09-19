@@ -27,30 +27,36 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transition: background-color 0.3s ease, color 0.3s ease;
       text-align: center;
       line-height: 1.6; /* Increased line height for readability */
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     /* Container styling */
     .container {
-      width: 90%;
-      max-width: 800px;
+      width: 80%; /* Adjusted width for a more broadsheet-like layout */
+      max-width: 1000px; /* Wider maximum width */
       margin: 0 auto;
-      padding: 20px;
+      padding: 40px; /* Increased padding for a more formal look */
       text-align: justify; /* Justify text for a more formal look */
-      background: transparent; /* Removed background to eliminate box effect */
-      border-radius: 0; /* Removed border-radius for no box effect */
+      background: transparent; /* No background to eliminate box effect */
+      border-radius: 0; /* No border radius */
       position: relative;
       z-index: 1;
-      box-shadow: none; /* Removed shadow */
+      box-shadow: none; /* No shadow */
     }
 
     /* Headings */
     h1 {
       margin-bottom: 20px;
-      font-size: 2.5em; /* Larger heading for emphasis */
+      font-size: 3em; /* Larger heading for emphasis */
       text-align: center; /* Center-align heading */
+      font-weight: bold; /* Bold for emphasis */
+    }
+
+    h2, h3 {
+      margin-bottom: 15px;
+      font-size: 2em; /* Slightly smaller heading sizes */
     }
 
     /* Styling for text section */
@@ -76,6 +82,12 @@
     ul li a {
       font-size: 18px;
       font-weight: bold;
+      color: #0a66c2; /* LinkedIn blue for links */
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline; /* Underline on hover */
     }
 
     /* Icon links styling */
@@ -120,7 +132,7 @@
     /* Back to Home Button Styling */
     .back-to-home {
       position: fixed;
-      bottom: 60px; /* Adjusted to fit both buttons */
+      bottom: 20px; /* Position it close to the bottom for visibility */
       right: 20px;
       background-color: #0a66c2; /* LinkedIn blue for light mode */
       color: #ffffff; /* White text */
@@ -181,7 +193,7 @@
     }
 
     body.night .container {
-      background: #2b2b2b; /* Darker container for night mode */
+      background: transparent; /* Remove background for night mode */
     }
 
     body.night .icon-links a {
@@ -219,13 +231,13 @@
       <!-- Icon Links -->
       <div class="icon-links">
         <a href="https://arxiv.org" target="_blank" title="arXiv">
-          <i class="fas fa-file-alt"></i> <!-- Example icon; adjust as needed -->
+          <i class="fas fa-file-alt"></i>
         </a>
         <a href="https://scholar.google.com" target="_blank" title="Google Scholar">
-          <i class="fas fa-graduation-cap"></i> <!-- Example icon; adjust as needed -->
+          <i class="fas fa-graduation-cap"></i>
         </a>
         <a href="https://orcid.org" target="_blank" title="ORCID">
-          <i class="fas fa-id-badge"></i> <!-- Example icon; adjust as needed -->
+          <i class="fas fa-id-badge"></i>
         </a>
         <a href="index.html" class="home-icon" title="Home">
           <i class="fas fa-home"></i>
@@ -255,6 +267,4 @@
         body.classList.add('day');
       }
     }
-  </script>
-</body>
-</html>
+ 
