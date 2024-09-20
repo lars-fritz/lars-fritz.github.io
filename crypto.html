@@ -94,12 +94,11 @@
     /* Social media icons */
     .social-icons {
       display: flex;
-      flex-direction: column; /* Align icons vertically */
+      justify-content: space-around; /* Align icons horizontally with space around */
       margin-top: 20px;
     }
 
     .social-icons a {
-      margin: 5px 0; /* Spacing between icons */
       font-size: 30px;
       color: #333;
       display: inline-block;
@@ -107,9 +106,9 @@
       border: 1px solid transparent;
       border-radius: 5px;
       text-align: center;
-      width: 40px; /* Uniform width */
-      height: 40px; /* Uniform height */
-      line-height: 40px; /* Center icon vertically */
+      width: 50px; /* Uniform width */
+      height: 50px; /* Uniform height */
+      line-height: 50px; /* Center icon vertically */
       transition: background-color 0.3s;
     }
 
@@ -129,6 +128,9 @@
       border: 1px solid transparent;
       border-radius: 5px;
       text-align: center;
+      width: 50px; /* Same size as social icons */
+      height: 50px; /* Same size as social icons */
+      line-height: 50px; /* Center icon vertically */
       transition: background-color 0.3s;
     }
 
@@ -205,7 +207,7 @@
       <li><a href="#some-ideas">Some Ideas</a></li>
     </ul>
 
-    <!-- Social icons aligned vertically -->
+    <!-- Social icons aligned horizontally -->
     <div class="social-icons">
       <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
         <i class="fab fa-twitter"></i>
@@ -221,7 +223,7 @@
       </a>
     </div>
     
-    <!-- Home button separate from social icons -->
+    <!-- Home button under social icons -->
     <div class="home-button">
       <a href="https://lars-fritz.github.io/index.html" class="back-to-home-icon" title="Back to Home">
         <i class="fas fa-home"></i>
@@ -247,10 +249,8 @@
         <p>Bitcoin, launched in 2009, was the first cryptocurrency and remains the most well-known. However, thousands of alternative cryptocurrencies (altcoins) have emerged since, offering different features and use cases. Cryptocurrencies like Ethereum, for example, introduced smart contracts, which are self-executing contracts where the terms of the agreement are directly written into code.</p>
 
         <p>People use cryptocurrencies for various reasons, including privacy, low transaction costs, and the ability to bypass traditional financial systems. Some see them as a hedge against inflation or as an investment vehicle. With the rise of decentralized finance (DeFi) and non-fungible tokens (NFTs), cryptocurrencies are now playing a larger role in the broader financial ecosystem.</p>
-      </div>
 
-      <h3>Why People Use Cryptocurrencies</h3>
-      <div class="text-section">
+        <h3>Reasons for Adoption</h3>
         <p>Several reasons drive the adoption of cryptocurrencies:</p>
         <ul>
           <li><strong>Decentralization</strong>: Cryptocurrencies operate on decentralized networks, allowing users to transact without intermediaries. This autonomy appeals to those wary of government control or traditional banking systems.</li>
