@@ -30,6 +30,9 @@
       left: 0;
       height: 100vh;
       overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .menu h2 {
@@ -114,6 +117,10 @@
       color: #212121;
     }
 
+    body.day a {
+      color: #0073b1;
+    }
+
     /* Night theme styles */
     body.night {
       background-color: #1e1e1e;
@@ -134,6 +141,14 @@
     }
 
     body.night h1, body.night h2, body.night h3 {
+      color: #e0e0e0;
+    }
+
+    body.night a {
+      color: #4db8ff;
+    }
+
+    body.night .social-icons a {
       color: #e0e0e0;
     }
 
@@ -160,13 +175,34 @@
 </head>
 <body class="day">
   <div class="menu">
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="#market-makers">Market Makers & AMMs</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#educational-texts">Educational Texts</a></li>
-      <li><a href="#some-ideas">Some Ideas</a></li>
-    </ul>
+    <div>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#market-makers">Market Makers & AMMs</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#educational-texts">Educational Texts</a></li>
+        <li><a href="#some-ideas">Some Ideas</a></li>
+      </ul>
+    </div>
+    
+    <!-- Social icons section moved here -->
+    <div class="social-icons">
+      <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://medium.com/@yourusername" target="_blank" title="Medium">
+        <i class="fab fa-medium"></i>
+      </a>
+      <a href="https://arxiv.org/a/yourarxivid" target="_blank" title="arXiv">
+        <i class="fas fa-file-alt"></i>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://lars-fritz.github.io/index.html" class="back-to-home-icon" title="Back to Home">
+        <i class="fas fa-home"></i>
+      </a>
+    </div>
   </div>
 
   <div class="content-wrapper">
@@ -224,24 +260,6 @@
       <h3 id="some-ideas">Some Ideas</h3>
       <p>Recently, I played around with the idea of having a Balancer-style pool that pairs three assets in a concentrated liquidity fashion. While this idea seems beyond reasonable in a Uniswap v3 style setting, hooks in Uniswap v4 might offer a viable option to its realization. For more details, see <a href="https://github.com/lars-fritz/lars-fritz.github.io/raw/4caa25aadb66a63ee3b7bbe2c84202c16f15c147/documents/crypto/threepool.pdf" target="_blank">here</a>.</p>
 
-      <!-- Social icons section -->
-      <div class="social-icons">
-        <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://medium.com/@yourusername" target="_blank" title="Medium">
-          <i class="fab fa-medium"></i>
-        </a>
-        <a href="https://arxiv.org/a/yourarxivid" target="_blank" title="arXiv">
-          <i class="fas fa-file-alt"></i>
-        </a>
-        <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://lars-fritz.github.io/index.html" class="back-to-home-icon" title="Back to Home">
-          <i class="fas fa-home"></i>
-        </a>
-      </div>
     </div>
   </div>
 
