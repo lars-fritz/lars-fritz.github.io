@@ -24,9 +24,14 @@
 
     /* Left menu styling */
     .menu {
+      position: fixed; /* Fix the menu position */
+      top: 20px; /* Adjust top position */
+      left: 20px; /* Keep it aligned to the left */
       width: 200px;
+      height: calc(100vh - 40px); /* Make the height dynamic */
       padding: 20px;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      overflow-y: auto; /* Allow scrolling if the content exceeds the height */
     }
 
     .menu h2 {
@@ -58,7 +63,7 @@
       flex: 1;
       padding: 20px;
       max-width: 800px;
-      margin: auto; /* Center the container */
+      margin-left: 240px; /* Leave space for the fixed menu */
       text-align: justify;
     }
 
@@ -156,7 +161,7 @@
       <li><a href="#market-makers">Market Makers & AMMs</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#educational-texts">Educational Texts</a></li>
-      <li><a href="#some-ideas">Some Ideas</a></li> <!-- New menu item -->
+      <li><a href="#some-ideas">Some Ideas</a></li>
     </ul>
   </div>
 
@@ -194,49 +199,50 @@
 
     <h3 id="market-makers">Market Makers and Automated Market Makers (AMMs)</h3>
     <div class="text-section">
-      <p>In traditional financial markets, <strong>market makers</strong> play a vital role in ensuring liquidity. A market maker is a firm or individual who quotes both buy (bid) and sell (ask) prices for a financial asset, such as stocks or bonds, hoping to profit from the difference between the two. By continuously offering to buy or sell, market makers ensure there’s always enough supply and demand, allowing smooth trading. They take on the risk of holding assets to provide this liquidity, and in return, they make profits on the spread (the difference between the bid and ask prices). Their role is crucial in stabilizing markets by preventing extreme price fluctuations and reducing the risk of illiquid markets.</p>
+      <p>In traditional financial markets, <strong>market makers</strong> play a vital role in ensuring liquidity. A market maker is a firm or individual who quotes both buy (bid) and sell (ask) prices for a financial asset, such as stocks or bonds, hoping to profit from the difference between the two prices. In the context of cryptocurrencies, market makers are essential for maintaining the trading volume and price stability on exchanges.</p>
 
-      <p>In the cryptocurrency world, <strong>Automated Market Makers (AMMs)</strong> attempt to replicate this role without the need for traditional intermediaries. AMMs are smart contracts that allow for decentralized trading by using liquidity pools instead of the traditional order book. In this system, users provide liquidity to pools for various cryptocurrency pairs, and the AMM uses an algorithm to set prices based on supply and demand. Popular platforms like Uniswap, Balancer, and SushiSwap employ AMMs to allow seamless trading in decentralized finance (DeFi).</p>
+      <p><strong>Automated Market Makers (AMMs)</strong> are a new class of market makers that have emerged with the rise of decentralized finance (DeFi). Unlike traditional market makers, AMMs use smart contracts to set prices and facilitate trades based on a predetermined algorithm rather than relying on human decision-making. Liquidity is provided by users who deposit their assets into liquidity pools, earning a share of the trading fees in return.</p>
 
-      <p>AMMs adjust prices according to a predefined algorithm. For example, Uniswap uses the formula <code>x * y = k</code>, where <code>x</code> and <code>y</code> are the reserves of two tokens in a pool, and <code>k</code> is a constant. As more of one token is bought, its price increases to maintain the balance of the pool, emulating the function of a market maker by ensuring liquidity and price adjustment. This system eliminates the need for human intervention and enables 24/7 trading with lower overhead costs compared to traditional market-making systems.</p>
-
-      <p>AMMs have revolutionized how liquidity is provided in decentralized exchanges (DEXs), allowing for trustless, permissionless trading while incentivizing users (liquidity providers) to supply liquidity by offering them transaction fees or rewards in the form of tokens.</p>
-
-      <p>In summary, while traditional market makers stabilize financial markets by ensuring liquidity, the rise of AMMs in the cryptocurrency space has automated and decentralized this process, allowing anyone to participate in liquidity provision, thereby democratizing market-making.</p>
+      <p>AMMs have democratized trading, allowing anyone to become a liquidity provider and earn passive income. Popular AMMs like Uniswap, SushiSwap, and Balancer have gained traction in the DeFi ecosystem, enabling seamless token swaps without intermediaries. However, users must be aware of risks such as impermanent loss, where the value of their deposited assets may change compared to holding them outside the pool.</p>
     </div>
 
-    <h3 id="research">Research</h3>
-    <p>Content coming soon...</p>
+    <h3 id="research">Research in Cryptocurrency</h3>
+    <div class="text-section">
+      <p>The cryptocurrency space is dynamic and ever-evolving, making research critical for investors, developers, and enthusiasts. Here are some key areas of research:</p>
+      <ul>
+        <li><strong>Market Analysis</strong>: Understanding market trends, investor behavior, and sentiment analysis is vital for making informed decisions.</li>
+        <li><strong>Blockchain Technology</strong>: Researching the underlying technology, scalability solutions, and consensus mechanisms helps in evaluating different cryptocurrencies.</li>
+        <li><strong>Security</strong>: As the industry faces security threats, research into vulnerabilities, attack vectors, and best practices is essential for safeguarding assets.</li>
+        <li><strong>Regulatory Landscape</strong>: Keeping track of evolving regulations and compliance requirements is crucial for industry participants.</li>
+      </ul>
+    </div>
 
-    <h3 id="educational-texts">Educational Texts</h3>
-    <p>Content coming soon...</p>
+    <h3 id="educational-texts">Educational Texts and Resources</h3>
+    <div class="text-section">
+      <p>For those looking to deepen their understanding of cryptocurrencies, various resources are available:</p>
+      <ul>
+        <li><a href="https://www.coindesk.com/learn/" target="_blank">CoinDesk's Learn Section</a></li>
+        <li><a href="https://www.khanacademy.org/college-careers-more/personal-finance/cryptocurrency" target="_blank">Khan Academy - Cryptocurrency</a></li>
+        <li><a href="https://www.investopedia.com/cryptocurrency-5112518" target="_blank">Investopedia - Cryptocurrency Explained</a></li>
+        <li><a href="https://www.blockchain.com/learning-portal" target="_blank">Blockchain Learning Portal</a></li>
+      </ul>
+    </div>
 
-<h3 id="some-ideas">Some Ideas</h3>
-<p>Recently, I played around with the idea of having a Balancer-style pool that pairs three assets in a concentrated liquidity fashion. While this idea seems beyond reasonable in a Uniswap v3 style setting, hooks in Uniswap v4 might offer a viable option to its realization. For more details, see <a href="https://raw.githubusercontent.com/lars-fritz/lars-fritz.github.io/main/documents/crypto/threepool.pdf" target="_blank" class="pdf-link">here</a>.</p>
+    <h3 id="some-ideas">Some Ideas for Future Exploration</h3>
+    <div class="text-section">
+      <p>As the cryptocurrency landscape continues to evolve, here are some ideas for future exploration:</p>
+      <ul>
+        <li>Investigate the impact of Central Bank Digital Currencies (CBDCs) on traditional banking systems.</li>
+        <li>Explore the potential of cryptocurrencies in emerging markets and their role in financial inclusion.</li>
+        <li>Research the intersection of blockchain technology and environmental sustainability.</li>
+        <li>Examine the social implications of cryptocurrency adoption and its influence on global economies.</li>
+      </ul>
+    </div>
 
-<style>
-  /* Add this CSS to define the PDF link color */
-  body.night .pdf-link {
-    color: #4fa3ff; /* Change this to your desired color for links in dark mode */
-  }
-</style>
-    <!-- Social icons section -->
     <div class="social-icons">
-      <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://medium.com/@yourusername" target="_blank" title="Medium">
-        <i class="fab fa-medium"></i>
-      </a>
-      <a href="https://arxiv.org/a/yourarxivid" target="_blank" title="arXiv">
-        <i class="fas fa-file-alt"></i>
-      </a>
-      <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://lars-fritz.github.io/index.html" class="back-to-home-icon" title="Back to Home">
-        <i class="fas fa-home"></i>
-      </a>
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </div>
 
