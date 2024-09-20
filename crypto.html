@@ -27,6 +27,11 @@
       width: 200px;
       padding: 20px;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
     }
 
     .menu h2 {
@@ -58,7 +63,7 @@
       flex: 1;
       padding: 20px;
       max-width: 800px;
-      margin: auto; /* Center the container */
+      margin-left: 200px;
       text-align: justify;
     }
 
@@ -112,16 +117,16 @@
     }
 
     body.night .menu {
-      background-color: #333; /* Darker background for the menu */
-      color: #e0e0e0; /* Light text for the menu */
+      background-color: #333;
+      color: #e0e0e0;
     }
 
     body.night .menu a {
-      color: #e0e0e0; /* Light color for links in dark mode */
+      color: #e0e0e0;
     }
 
     body.night .menu a:hover {
-      color: #0073b1; /* Keep hover color the same */
+      color: #0073b1;
     }
 
     body.night h1, body.night h2, body.night h3 {
@@ -156,7 +161,7 @@
       <li><a href="#market-makers">Market Makers & AMMs</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#educational-texts">Educational Texts</a></li>
-      <li><a href="#some-ideas">Some Ideas</a></li> <!-- New menu item -->
+      <li><a href="#some-ideas">Some Ideas</a></li>
     </ul>
   </div>
 
@@ -194,7 +199,7 @@
 
     <h3 id="market-makers">Market Makers and Automated Market Makers (AMMs)</h3>
     <div class="text-section">
-      <p>In traditional financial markets, <strong>market makers</strong> play a vital role in ensuring liquidity. A market maker is a firm or individual who quotes both buy (bid) and sell (ask) prices for a financial asset, such as stocks or bonds, hoping to profit from the difference between the two. By continuously offering to buy or sell, market makers ensure there’s always enough supply and demand, allowing smooth trading. They take on the risk of holding assets to provide this liquidity, and in return, they make profits on the spread (the difference between the bid and ask prices). Their role is crucial in stabilizing markets by preventing extreme price fluctuations and reducing the risk of illiquid markets.</p>
+      <p>In traditional financial markets, <strong>market makers</strong> play a vital role in ensuring liquidity. A market maker is a firm or individual who quotes both buy (bid) and sell (ask) prices for a financial asset, such as stocks or bonds, hoping to profit from the difference between the two. By continuously offering to buy or sell, market makers ensure there's always enough supply and demand, allowing smooth trading. They take on the risk of holding assets to provide this liquidity, and in return, they make profits on the spread (the difference between the bid and ask prices). Their role is crucial in stabilizing markets by preventing extreme price fluctuations and reducing the risk of illiquid markets.</p>
 
       <p>In the cryptocurrency world, <strong>Automated Market Makers (AMMs)</strong> attempt to replicate this role without the need for traditional intermediaries. AMMs are smart contracts that allow for decentralized trading by using liquidity pools instead of the traditional order book. In this system, users provide liquidity to pools for various cryptocurrency pairs, and the AMM uses an algorithm to set prices based on supply and demand. Popular platforms like Uniswap, Balancer, and SushiSwap employ AMMs to allow seamless trading in decentralized finance (DeFi).</p>
 
