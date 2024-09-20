@@ -35,13 +35,11 @@
     .menu h2 {
       margin-bottom: 20px;
       font-size: 1.5em;
-      text-align: left; /* Align title left */
     }
 
     .menu ul {
       list-style: none;
       padding: 0;
-      margin-bottom: 20px;
     }
 
     .menu li {
@@ -52,41 +50,30 @@
       text-decoration: none;
       color: #333;
       transition: color 0.3s;
-      display: block; /* Make links block-level for uniform height */
-      padding: 10px;
-      text-align: left; /* Align links left */
-      border: 1px solid transparent;
-      border-radius: 5px;
     }
 
     .menu a:hover {
       color: #0073b1;
-      background-color: #f0f0f0; /* Highlight on hover */
     }
 
     /* Main content wrapper */
     .content-wrapper {
       display: flex;
-      margin-left: 200px; /* Align content to start right next to the menu */
-      padding: 20px; /* Add padding to the content */
+      justify-content: center;
+      margin-left: 200px; /* Account for the fixed menu */
     }
 
     /* Main container styling */
     .container {
-      max-width: 800px; /* Maintain a narrower width */
+      max-width: 800px;
       width: 100%;
-      text-align: left; /* Left align main text */
-      margin: 0 auto; /* Center the container in the available space */
+      padding: 20px;
+      text-align: justify;
     }
 
     /* Center the text */
-    h1 {
-      text-align: left; /* Align main title left */
-    }
-
-    h2, h3 {
-      text-align: left; /* Align section titles left */
-      margin-top: 20px; /* Add space above section titles */
+    h1, h2, h3 {
+      text-align: center;
     }
 
     /* Styling for text section */
@@ -101,48 +88,15 @@
     /* Social media icons */
     .social-icons {
       display: flex;
-      justify-content: space-around; /* Align icons horizontally with space around */
+      justify-content: center;
+      flex-wrap: wrap;
       margin-top: 20px;
     }
 
     .social-icons a {
+      margin: 0 10px;
       font-size: 30px;
       color: #333;
-      display: inline-block;
-      padding: 10px;
-      border: 1px solid transparent;
-      border-radius: 5px;
-      text-align: center;
-      width: 50px; /* Uniform width */
-      height: 50px; /* Uniform height */
-      line-height: 50px; /* Center icon vertically */
-      transition: background-color 0.3s;
-    }
-
-    .social-icons a:hover {
-      background-color: #f0f0f0; /* Highlight on hover */
-    }
-
-    /* Home button styling */
-    .home-button {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .home-button a {
-      padding: 10px;
-      border: 1px solid transparent;
-      border-radius: 5px;
-      text-align: center;
-      width: 50px; /* Same size as social icons */
-      height: 50px; /* Same size as social icons */
-      line-height: 50px; /* Center icon vertically */
-      transition: background-color 0.3s;
-    }
-
-    .home-button a:hover {
-      background-color: #f0f0f0; /* Highlight on hover */
     }
 
     /* Day theme styles */
@@ -213,29 +167,6 @@
       <li><a href="#educational-texts">Educational Texts</a></li>
       <li><a href="#some-ideas">Some Ideas</a></li>
     </ul>
-
-    <!-- Social icons aligned horizontally -->
-    <div class="social-icons">
-      <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://medium.com/@yourusername" target="_blank" title="Medium">
-        <i class="fab fa-medium"></i>
-      </a>
-      <a href="https://arxiv.org/a/yourarxivid" target="_blank" title="arXiv">
-        <i class="fas fa-file-alt"></i>
-      </a>
-      <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    
-    <!-- Home button under social icons -->
-    <div class="home-button">
-      <a href="https://lars-fritz.github.io/index.html" class="back-to-home-icon" title="Back to Home">
-        <i class="fas fa-home"></i>
-      </a>
-    </div>
   </div>
 
   <div class="content-wrapper">
@@ -246,40 +177,85 @@
         <h2>Overview of Cryptocurrencies</h2>
         <p>Cryptocurrencies are digital or virtual currencies that leverage cryptographic techniques to secure transactions and control the creation of new units. Unlike traditional currencies, which are regulated by central authorities, cryptocurrencies operate on decentralized networks based on blockchain technology. The decentralized nature provides transparency, security, and freedom from centralized control, making them attractive for various applications.</p>
 
-        <!-- Updated figure style -->
-        <figure style="margin-right: 15px; text-align: center;">
+        <figure style="float: left; width: 50%; margin-right: 15px; text-align: center;">
           <img src="https://raw.githubusercontent.com/lars-fritz/lars-fritz.github.io/main/pics/crypto/cryptocurrencies.avif" alt="Cryptocurrency Overview" style="width: 100%; height: auto;">
           <figcaption style="font-size: 0.9em; color: #555;">
             Image Source: <a href="https://www.ft.com/content/2ce706c4-9c59-415c-9591-0e7d6502a08b" target="_blank">Financial Times</a>
           </figcaption>
         </figure>
 
-        <p>Bitcoin, launched in 2009, was the first cryptocurrency and remains the most well-known. However, thousands of alternative cryptocurrencies (altcoins) have emerged since, offering different features and use cases. Cryptocurrencies like Ethereum, for example, introduced smart contracts, which are self-executing contracts with the terms directly written into code.</p>
+        <p>Bitcoin, launched in 2009, was the first cryptocurrency and remains the most well-known. However, thousands of alternative cryptocurrencies (altcoins) have emerged since, offering different features and use cases. Cryptocurrencies like Ethereum, for example, introduced smart contracts, which are self-executing contracts where the terms of the agreement are directly written into code.</p>
+
+        <p>People use cryptocurrencies for various reasons, including privacy, low transaction costs, and the ability to bypass traditional financial systems. Some see them as a hedge against inflation or as an investment vehicle. With the rise of decentralized finance (DeFi) and non-fungible tokens (NFTs), cryptocurrencies are now playing a larger role in the broader financial ecosystem.</p>
       </div>
 
+      <h3>Why People Use Cryptocurrencies</h3>
       <div class="text-section">
-        <h3>Reasons for Adoption</h3>
-        <p>The adoption of cryptocurrencies has been driven by several factors. First, the decentralized nature provides an alternative to traditional financial systems that are often seen as inefficient or overly centralized. Cryptocurrencies can facilitate faster, cheaper cross-border transactions compared to traditional banking methods.</p>
-        <p>Additionally, the potential for significant financial returns has attracted both institutional and retail investors to the space. As more businesses and individuals recognize the utility and potential of cryptocurrencies, their adoption continues to grow.</p>
+        <p>There are several reasons why people are increasingly adopting cryptocurrencies:</p>
+        <ul style="padding-left: 20px; list-style-position: outside;">
+          <li><strong>Decentralization and Control</strong>: Cryptocurrencies provide users with more control over their assets. Traditional banking systems rely on intermediaries who can impose restrictions, charge fees, or delay transactions. Cryptocurrencies allow people to transfer value directly, without intermediaries, at any time and from anywhere.</li>
+          <li><strong>Financial Inclusion</strong>: In regions where banking infrastructure is weak or inaccessible, cryptocurrencies offer an alternative for people to store, transfer, and grow their wealth. This inclusion extends financial services to unbanked populations, particularly in developing countries.</li>
+          <li><strong>Security and Privacy</strong>: Cryptocurrencies are secured by cryptographic protocols that make them resistant to fraud and hacking. While transactions are recorded on a public ledger, certain cryptocurrencies, like Monero or Zcash, emphasize privacy by obfuscating transaction details.</li>
+          <li><strong>Lower Transaction Costs</strong>: Traditional financial systems often charge fees for transfers, especially for international payments. Cryptocurrencies enable near-instantaneous transactions at a fraction of the cost.</li>
+          <li><strong>Hedge Against Inflation</strong>: In countries where inflation is rampant and local currencies lose value rapidly, cryptocurrencies like Bitcoin, with a fixed supply, offer a hedge against inflation. Investors use them as a store of value, similar to gold.</li>
+          <li><strong>Innovation and Investment</strong>: Cryptocurrencies represent an entirely new asset class, drawing interest from traders, investors, and speculators. Beyond currency-like functions, some cryptocurrencies like Ethereum enable smart contracts, decentralized applications (dApps), and non-fungible tokens (NFTs), broadening their use cases.</li>
+        </ul>
       </div>
 
+      <h3 id="market-makers">Market Makers and Automated Market Makers (AMMs)</h3>
       <div class="text-section">
-        <h3>Risks and Challenges</h3>
-        <p>Despite the benefits, cryptocurrencies also present several risks and challenges. The volatility of cryptocurrency prices can lead to significant financial losses for investors. Moreover, regulatory uncertainty in various jurisdictions poses challenges to widespread adoption and use.</p>
-        <p>Security risks, such as hacking and fraud, are also a major concern. While blockchain technology is inherently secure, the platforms and wallets used to store and trade cryptocurrencies may be vulnerable to attacks.</p>
+        <p>In traditional financial markets, <strong>market makers</strong> play a vital role in ensuring liquidity. A market maker is a firm or individual who quotes both buy (bid) and sell (ask) prices for a financial asset, such as stocks or bonds, hoping to profit from the difference between the two. By continuously offering to buy or sell, market makers ensure there's always enough supply and demand, allowing smooth trading. They take on the risk of holding assets to provide this liquidity, and in return, they make profits on the spread (the difference between the bid and ask prices). Their role is crucial in stabilizing markets by preventing extreme price fluctuations and reducing the risk of illiquid markets.</p>
+
+        <p>In the cryptocurrency world, <strong>Automated Market Makers (AMMs)</strong> attempt to replicate this role without the need for traditional intermediaries. AMMs are smart contracts that allow for decentralized trading by using liquidity pools instead of the traditional order book. In this system, users provide liquidity to pools for various cryptocurrency pairs, and the AMM uses an algorithm to set prices based on supply and demand. Popular platforms like Uniswap, Balancer, and SushiSwap employ AMMs to allow seamless trading in decentralized finance (DeFi).</p>
+
+        <p>AMMs adjust prices according to a predefined algorithm. For example, Uniswap uses the formula <code>x * y = k</code>, where <code>x</code> and <code>y</code> are the reserves of two tokens in a pool, and <code>k</code> is a constant. As more of one token is bought, its price increases to maintain the balance of the pool, emulating the function of a market maker by ensuring liquidity and price adjustment. This system eliminates the need for human intervention and enables 24/7 trading with lower overhead costs compared to traditional market-making systems.</p>
+
+        <p>AMMs have revolutionized how liquidity is provided in decentralized exchanges (DEXs), allowing for trustless, permissionless trading while incentivizing users (liquidity providers) to supply liquidity by offering them transaction fees or rewards in the form of tokens.</p>
+
+        <p>In summary, while traditional market makers stabilize financial markets by ensuring liquidity, the rise of AMMs in the cryptocurrency space has automated and decentralized this process, allowing anyone to participate in liquidity provision, thereby democratizing market-making.</p>
+      </div>
+
+      <h3 id="research">Research</h3>
+      <p>Content coming soon...</p>
+
+      <h3 id="educational-texts">Educational Texts</h3>
+      <p>Content coming soon...</p>
+
+      <h3 id="some-ideas">Some Ideas</h3>
+      <p>Recently, I played around with the idea of having a Balancer-style pool that pairs three assets in a concentrated liquidity fashion. While this idea seems beyond reasonable in a Uniswap v3 style setting, hooks in Uniswap v4 might offer a viable option to its realization. For more details, see <a href="https://github.com/lars-fritz/lars-fritz.github.io/raw/4caa25aadb66a63ee3b7bbe2c84202c16f15c147/documents/crypto/threepool.pdf" target="_blank">here</a>.</p>
+
+      <!-- Social icons section -->
+      <div class="social-icons">
+        <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://medium.com/@yourusername" target="_blank" title="Medium">
+          <i class="fab fa-medium"></i>
+        </a>
+        <a href="https://arxiv.org/a/yourarxivid" target="_blank" title="arXiv">
+          <i class="fas fa-file-alt"></i>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://lars-fritz.github.io/index.html" class="back-to-home-icon" title="Back to Home">
+          <i class="fas fa-home"></i>
+        </a>
       </div>
     </div>
   </div>
 
-  <button class="theme-toggle">Toggle Theme</button>
+  <!-- Night mode toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i> Toggle Theme
+  </button>
 
   <script>
-    const themeToggleButton = document.querySelector('.theme-toggle');
-    const body = document.querySelector('body');
-
-    themeToggleButton.addEventListener('click', () => {
+    function toggleTheme() {
+      const body = document.body;
       body.classList.toggle('night');
-    });
+      body.classList.toggle('day');
+    }
   </script>
 </body>
 </html>
