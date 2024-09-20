@@ -167,19 +167,9 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1000;
     }
-
+    
     .theme-toggle:hover {
       background-color: #084482;
-    }
-
-    /* Hide all sections initially */
-    .section {
-      display: none;
-    }
-
-    /* Show the active section */
-    .section.active {
-      display: block;
     }
   </style>
 </head>
@@ -188,15 +178,14 @@
     <div>
       <h2>Menu</h2>
       <ul>
-        <li><a href="#overview" onclick="loadContent('overview')">Overview</a></li>        
-        <li><a href="#market-makers" onclick="loadContent('market-makers')">Market Makers & AMMs</a></li>
-        <li><a href="#research" onclick="loadContent('research')">Research</a></li>
-        <li><a href="#educational-texts" onclick="loadContent('educational-texts')">Educational Texts</a></li>
-        <li><a href="#some-ideas" onclick="loadContent('some-ideas')">Some Ideas</a></li>
+        <li><a href="#market-makers">Market Makers & AMMs</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#educational-texts">Educational Texts</a></li>
+        <li><a href="#some-ideas">Some Ideas</a></li>
       </ul>
     </div>
     
-    <!-- Social icons section -->
+    <!-- Social icons section moved here -->
     <div class="social-icons">
       <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
         <i class="fab fa-twitter"></i>
@@ -218,7 +207,9 @@
 
   <div class="content-wrapper">
     <div class="container">
-      <div id="overview" class="section active">
+      <h1>Things Crypto</h1>
+      
+      <div class="cryptocurrency-section">
         <h2>Overview of Cryptocurrencies</h2>
         <p>Cryptocurrencies are digital or virtual currencies that leverage cryptographic techniques to secure transactions and control the creation of new units. Unlike traditional currencies, which are regulated by central authorities, cryptocurrencies operate on decentralized networks based on blockchain technology. The decentralized nature provides transparency, security, and freedom from centralized control, making them attractive for various applications.</p>
 
@@ -231,6 +222,11 @@
 
         <p>Bitcoin, launched in 2009, was the first cryptocurrency and remains the most well-known. However, thousands of alternative cryptocurrencies (altcoins) have emerged since, offering different features and use cases. Cryptocurrencies like Ethereum, for example, introduced smart contracts, which are self-executing contracts where the terms of the agreement are directly written into code.</p>
 
+        <p>People use cryptocurrencies for various reasons, including privacy, low transaction costs, and the ability to bypass traditional financial systems. Some see them as a hedge against inflation or as an investment vehicle. With the rise of decentralized finance (DeFi) and non-fungible tokens (NFTs), cryptocurrencies are now playing a larger role in the broader financial ecosystem.</p>
+      </div>
+
+      <h3>Why People Use Cryptocurrencies</h3>
+      <div class="text-section">
         <p>There are several reasons why people are increasingly adopting cryptocurrencies:</p>
         <ul style="padding-left: 20px; list-style-position: outside;">
           <li><strong>Decentralization and Control</strong>: Cryptocurrencies provide users with more control over their assets. Traditional banking systems rely on intermediaries who can impose restrictions, charge fees, or delay transactions. Cryptocurrencies allow people to transfer value directly, without intermediaries, at any time and from anywhere.</li>
@@ -242,8 +238,8 @@
         </ul>
       </div>
 
-      <div id="market-makers" class="section">
-        <h2>Market Makers and Automated Market Makers (AMMs)</h2>
+      <h3 id="market-makers">Market Makers and Automated Market Makers (AMMs)</h3>
+      <div class="text-section">
         <p>In traditional financial markets, <strong>market makers</strong> play a vital role in ensuring liquidity. A market maker is a firm or individual who quotes both buy (bid) and sell (ask) prices for a financial asset, such as stocks or bonds, hoping to profit from the difference between the two. By continuously offering to buy or sell, market makers ensure there's always enough supply and demand, allowing smooth trading. They take on the risk of holding assets to provide this liquidity, and in return, they make profits on the spread (the difference between the bid and ask prices). Their role is crucial in stabilizing markets by preventing extreme price fluctuations and reducing the risk of illiquid markets.</p>
 
         <p>In the cryptocurrency world, <strong>Automated Market Makers (AMMs)</strong> attempt to replicate this role without the need for traditional intermediaries. AMMs are smart contracts that allow for decentralized trading by using liquidity pools instead of the traditional order book. In this system, users provide liquidity to pools for various cryptocurrency pairs, and the AMM uses an algorithm to set prices based on supply and demand. Popular platforms like Uniswap, Balancer, and SushiSwap employ AMMs to allow seamless trading in decentralized finance (DeFi).</p>
@@ -255,15 +251,43 @@
         <p>In summary, while traditional market makers stabilize financial markets by ensuring liquidity, the rise of AMMs in the cryptocurrency space has automated and decentralized this process, allowing anyone to participate in liquidity provision, thereby democratizing market-making.</p>
       </div>
 
-      <div id="research" class="section">
-        <h2>Research</h2>
-        <p>Throughout the last two years, it has become increasingly clear that DeFi's biggest problem to solve is loss-vs-rebalancing (LVR). LVR refers to the opportunity cost incurred by liquidity providers in automated market makers (AMMs) when compared to an ideal rebalancing strategy. It quantifies the difference between the value of the liquidity pool and the value that would have been achieved through perfect rebalancing of assets in response to price changes.</p>
-        <p>In essence, LVR captures the losses that liquidity providers (LPers) experience due to price fluctuations and the resulting need for rebalancing. When prices move, LPers can find themselves holding assets that have decreased in value relative to their optimal positions. This situation becomes particularly critical during periods of high volatility, where the potential for loss increases significantly.</p>
-        <p>The concept of LVR emphasizes the importance of timely and effective asset rebalancing. An ideal rebalancing strategy would dynamically adjust the composition of the liquidity pool to reflect current market conditions, maximizing the potential returns for LPers and minimizing their losses. Unfortunately, achieving this perfect rebalancing in real-time is a significant challenge due to market unpredictability and the inherent latency in transaction execution.</p>
-        <p>To address the challenges posed by LVR, several innovative strategies can be employed: One effective approach is implementing a dynamic fee structure that adapts to market conditions. In scenarios of heightened volatility, increasing transaction fees can serve two main purposes: (i) By raising fees, the price accuracy can be slightly diminished, making it less attractive for arbitrageurs to exploit minor price discrepancies. This reduces the immediate losses faced by LPers; (ii) Higher fees during volatile periods can lead to greater revenue generation, which in turn can help offset the opportunity costs associated with LVR.</p>
-        <p>Recently, we started to look into the arbitrage dynamics of Uniswap v2 pools and how they get modified by fees. We find strong evidence for the usefulness of not only dynamical but also asymmetric fees. The results of our studies are available on the arxiv, see <a href="https://arxiv.org/abs/2404.03976" target="_blank">Research Paper 1</a> and <a href="https://arxiv.org/abs/2406.12417" target="_blank">Research Paper 2</a>. Together with Abe Alexander (specialist in economy and data science) I have started a service that allows companies to get in touch with us so we can provide tailor-made solutions to your problems.</p>
-      </div>
+      <h3 id="research">Research</h3>
+    <p>
+        Throughout the last two years, it has become increasingly clear that DeFi’s biggest problem to solve is loss-vs-rebalancing (LVR). LVR refers to the opportunity cost incurred by liquidity providers in automated market makers (AMMs) when compared to an ideal rebalancing strategy. It quantifies the difference between the value of the liquidity pool and the value that would have been achieved through perfect rebalancing of assets in response to price changes.
+    </p>
+    <p>
+        In essence, LVR captures the losses that liquidity providers (LPers) experience due to price fluctuations and the resulting need for rebalancing. When prices move, LPers can find themselves holding assets that have decreased in value relative to their optimal positions. This situation becomes particularly critical during periods of high volatility, where the potential for loss increases significantly. 
+    </p>
+    <p>
+        The concept of LVR emphasizes the importance of timely and effective asset rebalancing. An ideal rebalancing strategy would dynamically adjust the composition of the liquidity pool to reflect current market conditions, maximizing the potential returns for LPers and minimizing their losses. Unfortunately, achieving this perfect rebalancing in real-time is a significant challenge due to market unpredictability and the inherent latency in transaction execution.
+        To address the challenges posed by LVR, several innovative strategies can be employed:
+        One effective approach is implementing a dynamic fee structure that adapts to market conditions. In scenarios of heightened volatility, increasing transaction fees can serve two main purposes: 
+(i) By raising fees, the price accuracy can be slightly diminished, making it less attractive for arbitrageurs to exploit minor price discrepancies. This reduces the immediate losses faced by LPers; (ii) Higher fees during volatile periods can lead to greater revenue generation, which in turn can help offset the opportunity costs associated with LVR.
+    <p>
+      <p> Recently, we started to look into the arbitrage dynamics of Uniswap v2 pools and how they get modified by fees. We find strong evidence for the usefulness of not only dynamical but also asymmetric fees. The results of our studies are available on the arxiv, see <a href="https://arxiv.org/abs/2404.03976" target="_blank">Research Paper 1</a> and
+<a href="https://arxiv.org/abs/2406.12417" target="_blank">Research Paper 2</a>. Together with Abe Alexander (specialist in economy and data science) I have started a service that allows companies to get in touch with us so we can provide tailor made solutions to your problems.
+  <p>
 
-      <div id="educational-texts" class="section">
-        <h2>Educational Texts</h2>
-        <p>Looking through the variety of AMMs and possible functions (this is a nice book as <a href="https://www.amazon.com/Automated-Market-Makers-Decentralized-Cryptocurrency/dp/1484286154" target="_blank">reference</a>), I came across an AMM by <a href="https://dodoex.io/en" target="_blank">Dodo</a> that impressed me due to two features: (1) it is very versatile and tuneable and (2) it allows for single sided deposits. I worked out some features of the maths that were not very clear in their whitepaper. The document can be found <a href="https://github.com/lars-fritz/lars-fritz.github.io/raw/74dec685b932851f761d3dd54092477a9e6f40e3
+      <h3 id="educational-texts">Educational Texts</h3>
+      <p>Looking through the variety of AMMs and possible functions (this is a nice book as <a href="https://www.amazon.com/Automated-Market-Makers-Decentralized-Cryptocurrency/dp/1484286154" target="_blank">reference</a>), I came across an AMM by <a href="https://dodoex.io/en" target="_blank">Dodo</a> that impressed me due to two features: (1) it is very versatile and tuneable and (2) it allows for single sided deposits. I worked out some features of the maths that were not very clear in their whitepaper. The document can be found <a href="https://github.com/lars-fritz/lars-fritz.github.io/raw/74dec685b932851f761d3dd54092477a9e6f40e3/documents/crypto/dodomath.pdf" target="_blank">here</a>.</p>
+
+      <h3 id="some-ideas">Some Ideas</h3>
+      <p>Recently, I played around with the idea of having a Balancer-style pool that pairs three assets in a concentrated liquidity fashion. While this idea seems beyond reasonable in a Uniswap v3 style setting, hooks in Uniswap v4 might offer a viable option to its realization. For more details, see <a href="https://github.com/lars-fritz/lars-fritz.github.io/raw/4caa25aadb66a63ee3b7bbe2c84202c16f15c147/documents/crypto/threepool.pdf" target="_blank">here</a>.</p>
+
+    </div>
+  </div>
+
+  <!-- Night mode toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i> Toggle Theme
+  </button>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle('night');
+      body.classList.toggle('day');
+    }
+  </script>
+</body>
+</html>
