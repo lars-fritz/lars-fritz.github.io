@@ -40,6 +40,7 @@
     .menu ul {
       list-style: none;
       padding: 0;
+      margin-bottom: 20px;
     }
 
     .menu li {
@@ -50,10 +51,16 @@
       text-decoration: none;
       color: #333;
       transition: color 0.3s;
+      display: block; /* Make links block-level for uniform height */
+      padding: 10px;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 5px;
     }
 
     .menu a:hover {
       color: #0073b1;
+      background-color: #f0f0f0; /* Highlight on hover */
     }
 
     /* Main content wrapper */
@@ -87,15 +94,27 @@
     /* Social media icons */
     .social-icons {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column; /* Align icons vertically */
       margin-top: 20px;
     }
 
     .social-icons a {
-      margin: 0 10px;
+      margin: 5px 0; /* Spacing between icons */
       font-size: 30px;
       color: #333;
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      text-align: center;
+      width: 40px; /* Uniform width */
+      height: 40px; /* Uniform height */
+      line-height: 40px; /* Center icon vertically */
+      transition: background-color 0.3s;
+    }
+
+    .social-icons a:hover {
+      background-color: #f0f0f0; /* Highlight on hover */
     }
 
     /* Home button styling */
@@ -103,6 +122,18 @@
       display: flex;
       justify-content: center;
       margin-top: 10px;
+    }
+
+    .home-button a {
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .home-button a:hover {
+      background-color: #f0f0f0; /* Highlight on hover */
     }
 
     /* Day theme styles */
@@ -173,8 +204,8 @@
       <li><a href="#educational-texts">Educational Texts</a></li>
       <li><a href="#some-ideas">Some Ideas</a></li>
     </ul>
-    
-    <!-- Social icons moved into the menu -->
+
+    <!-- Social icons aligned vertically -->
     <div class="social-icons">
       <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
         <i class="fab fa-twitter"></i>
@@ -220,12 +251,10 @@
 
       <h3>Why People Use Cryptocurrencies</h3>
       <div class="text-section">
-        <p>There are several reasons why people are increasingly adopting cryptocurrencies:</p>
-        <ul style="padding-left: 20px; list-style-position: outside;">
-          <li><strong>Decentralization and Control</strong>: Cryptocurrencies provide users with more control over their assets. Traditional banking systems rely on intermediaries who can impose restrictions, charge fees, or delay transactions. Cryptocurrencies allow people to transfer value directly, without intermediaries, at any time and from anywhere.</li>
-          <li><strong>Financial Inclusion</strong>: In regions where banking infrastructure is weak or inaccessible, cryptocurrencies offer an alternative for people to store, transfer, and grow their wealth. This inclusion extends financial services to unbanked populations, particularly in developing countries.</li>
-          <li><strong>Security and Privacy</strong>: Cryptocurrencies are secured by cryptographic protocols that make them resistant to fraud and hacking. While transactions are recorded on a public ledger, certain cryptocurrencies, like Monero or Zcash, emphasize privacy by obfuscating transaction details.</li>
-          <li><strong>Lower Transaction Costs</strong>: Traditional financial systems often charge fees for transfers, especially for international payments. Cryptocurrencies enable near-instantaneous transactions at a fraction of the cost.</li>
+        <p>Several reasons drive the adoption of cryptocurrencies:</p>
+        <ul>
+          <li><strong>Decentralization</strong>: Cryptocurrencies operate on decentralized networks, allowing users to transact without intermediaries. This autonomy appeals to those wary of government control or traditional banking systems.</li>
+          <li><strong>Low Fees</strong>: Traditional financial transactions often come with high fees. Cryptocurrencies enable near-instantaneous transactions at a fraction of the cost.</li>
           <li><strong>Hedge Against Inflation</strong>: In countries where inflation is rampant and local currencies lose value rapidly, cryptocurrencies like Bitcoin, with a fixed supply, offer a hedge against inflation. Investors use them as a store of value, similar to gold.</li>
           <li><strong>Innovation and Investment</strong>: Cryptocurrencies represent an entirely new asset class, drawing interest from traders, investors, and speculators. Beyond currency-like functions, some cryptocurrencies like Ethereum enable smart contracts, decentralized applications (dApps), and non-fungible tokens (NFTs), broadening their use cases.</li>
         </ul>
