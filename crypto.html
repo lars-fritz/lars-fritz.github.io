@@ -170,15 +170,47 @@
   <div class="container">
     <h1>Things Crypto</h1>
     
-    <div class="text-section">
-      <p>An Automated Market Maker (AMM) is a type of decentralized exchange protocol that uses mathematical formulas to price assets. Instead of relying on order books, AMMs use liquidity pools and algorithms to determine prices. These pools are funded by liquidity providers who deposit pairs of assets into the pool. The AMM then uses a formula to set prices based on the ratio of the assets in the pool, allowing for automated and continuous trading without the need for a traditional market maker.</p>
+<div class="content-section">
+  <h2>Cryptocurrencies: A Brief Overview</h2>
+  <div class="text-section">
+    <p>Cryptocurrencies are digital or virtual currencies that use cryptography to secure transactions, control the creation of new units, and verify the transfer of assets. Unlike traditional currencies issued by governments and central banks, cryptocurrencies operate on decentralized networks, primarily utilizing blockchain technology—a distributed ledger that ensures transparency and security. The most well-known cryptocurrency is Bitcoin, which was introduced in 2009 by an anonymous entity known as Satoshi Nakamoto. Since then, thousands of alternative cryptocurrencies, such as Ethereum, Ripple (XRP), and Litecoin, have emerged, each with unique features and use cases.</p>
 
-      <p>Over the past two years, a significant challenge in decentralized finance (DeFi) has been the issue of loss vs. rebalancing (LVR). LVR refers to the opportunity cost experienced by liquidity providers in AMMs compared to an ideal rebalancing strategy. It quantifies the difference between the value of the liquidity pool and the value that could have been achieved through perfect rebalancing of assets in response to price changes. In essence, it measures the losses incurred by liquidity providers due to arbitrage activities. The key to addressing LVR lies in mitigating these losses and optimizing the liquidity provision strategy.</p>
+    <p>One of the defining characteristics of cryptocurrencies is their decentralization. Unlike traditional financial systems, which rely on intermediaries like banks and governments to facilitate and verify transactions, cryptocurrencies operate on peer-to-peer networks. This decentralization reduces the risk of censorship, fraud, and manipulation, making cryptocurrency a more resilient financial tool.</p>
+  </div>
 
-      <p>Recent studies have demonstrated that one effective way to address LVR is through dynamic fee adjustment. By adjusting fees based on market conditions, particularly during high volatility, it is possible to reduce the impact of arbitrage and improve the protection for liquidity providers. For instance, increasing fees during volatile periods can limit the advantage of arbitrageurs by making pricing less accurate and collecting more fees. This approach helps in reducing LVR by protecting liquidity providers and optimizing their returns. Detailed analyses and algorithms supporting this method can be found in the research on dynamic fees and liquidity volatility (see: <a href="https://atise.medium.com/dynamic-fees-for-automated-market-makers-liquidity-volatility-and-collected-fees-db211da18d0d" target="_blank">Medium</a> or the technical paper <a href="https://moallemi.com/ciamac/papers/lqr-tx-fees-2023.pdf" target="_blank">here</a>).</p>
+  <h3>Why People Use Cryptocurrencies</h3>
+  <div class="text-section">
+    <p>There are several reasons why people are increasingly adopting cryptocurrencies:</p>
 
-      <p>Together with my colleague Abe Alexander, we strive to leave no stone unturned in our quest to optimize and improve automated market makers. Our collaborative efforts are focused on exploring all avenues to address and mitigate LVR effectively.</p>
-    </div>
+    <ul>
+      <li><strong>Decentralization and Control</strong>: Cryptocurrencies provide users with more control over their assets. Traditional banking systems rely on intermediaries who can impose restrictions, charge fees, or delay transactions. Cryptocurrencies allow people to transfer value directly, without intermediaries, at any time and from anywhere.</li>
+
+      <li><strong>Financial Inclusion</strong>: In regions where banking infrastructure is weak or inaccessible, cryptocurrencies offer an alternative for people to store, transfer, and grow their wealth. This inclusion extends financial services to unbanked populations, particularly in developing countries.</li>
+
+      <li><strong>Security and Privacy</strong>: Cryptocurrencies are secured by cryptographic protocols that make them resistant to fraud and hacking. While transactions are recorded on a public ledger, certain cryptocurrencies, like Monero or Zcash, emphasize privacy by obfuscating transaction details.</li>
+
+      <li><strong>Lower Transaction Costs</strong>: Traditional financial systems often charge fees for transfers, especially for international payments. Cryptocurrencies enable near-instantaneous transactions at a fraction of the cost.</li>
+
+      <li><strong>Hedge Against Inflation</strong>: In countries where inflation is rampant and local currencies lose value rapidly, cryptocurrencies like Bitcoin, with a fixed supply, offer a hedge against inflation. Investors use them as a store of value, similar to gold.</li>
+
+      <li><strong>Innovation and Investment</strong>: Cryptocurrencies represent an entirely new asset class, drawing interest from traders, investors, and speculators. Beyond currency-like functions, some cryptocurrencies like Ethereum enable smart contracts, decentralized applications (dApps), and non-fungible tokens (NFTs), broadening their use cases.</li>
+    </ul>
+  </div>
+
+  <h3>Market Makers and Automated Market Makers (AMMs)</h3>
+  <div class="text-section">
+    <p>In traditional financial markets, <strong>market makers</strong> play a vital role in ensuring liquidity. A market maker is a firm or individual who quotes both buy (bid) and sell (ask) prices for a financial asset, such as stocks or bonds, hoping to profit from the difference between the two. By continuously offering to buy or sell, market makers ensure there’s always enough supply and demand, allowing smooth trading. They take on the risk of holding assets to provide this liquidity, and in return, they make profits on the spread (the difference between the bid and ask prices). Their role is crucial in stabilizing markets by preventing extreme price fluctuations and reducing the risk of illiquid markets.</p>
+
+    <p>In the cryptocurrency world, <strong>Automated Market Makers (AMMs)</strong> attempt to replicate this role without the need for traditional intermediaries. AMMs are smart contracts that allow for decentralized trading by using liquidity pools instead of the traditional order book. In this system, users provide liquidity to pools for various cryptocurrency pairs, and the AMM uses an algorithm to set prices based on supply and demand. Popular platforms like Uniswap, Balancer, and SushiSwap employ AMMs to allow seamless trading in decentralized finance (DeFi).</p>
+
+    <p>AMMs adjust prices according to a predefined algorithm. For example, Uniswap uses the formula <code>x * y = k</code>, where <code>x</code> and <code>y</code> are the reserves of two tokens in a pool, and <code>k</code> is a constant. As more of one token is bought, its price increases to maintain the balance of the pool, emulating the function of a market maker by ensuring liquidity and price adjustment. This system eliminates the need for human intervention and enables 24/7 trading with lower overhead costs compared to traditional market-making systems.</p>
+
+    <p>AMMs have revolutionized how liquidity is provided in decentralized exchanges (DEXs), allowing for trustless, permissionless trading while incentivizing users (liquidity providers) to supply liquidity by offering them transaction fees or rewards in the form of tokens.</p>
+
+    <p>In summary, while traditional market makers stabilize financial markets by ensuring liquidity, the rise of AMMs in the cryptocurrency space has automated and decentralized this process, allowing anyone to participate in liquidity provision, thereby democratizing market-making.</p>
+  </div>
+</div>
+
 
     <!-- Social icons section -->
     <div class="social-icons">
