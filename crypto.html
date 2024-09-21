@@ -53,6 +53,7 @@
       text-decoration: none;
       color: #333;
       transition: color 0.3s;
+      cursor: pointer;
     }
 
     .menu a:hover {
@@ -171,6 +172,16 @@
     .theme-toggle:hover {
       background-color: #084482;
     }
+
+    /* Hide all sections by default */
+    .content-section {
+      display: none;
+    }
+
+    /* Show the active section */
+    .content-section.active {
+      display: block;
+    }
   </style>
 </head>
 <body class="day">
@@ -178,11 +189,11 @@
     <div>
       <h2>Menu</h2>
       <ul>
-        <li><a href="#overview">What is crypto?</a></li>        
-        <li><a href="#market-makers">Market Makers & AMMs</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#educational-texts">Educational Texts</a></li>
-        <li><a href="#some-ideas">Some Ideas</a></li>
+        <li><a onclick="showSection('overview')">What is crypto?</a></li>        
+        <li><a onclick="showSection('market-makers')">Market Makers & AMMs</a></li>
+        <li><a onclick="showSection('research')">Research</a></li>
+        <li><a onclick="showSection('educational-texts')">Educational Texts</a></li>
+        <li><a onclick="showSection('some-ideas')">Some Ideas</a></li>
       </ul>
     </div>
     
@@ -241,6 +252,21 @@
       body.classList.toggle('night');
       body.classList.toggle('day');
     }
+
+    function showSection(sectionId) {
+      // Hide all sections
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => section.classList.remove('active'));
+
+      // Show the selected section
+      const selectedSection = document.getElementById(sectionId);
+      selectedSection.classList.add('active');
+    }
+
+    // Show the "What is crypto?" section by default
+    window.onload = function() {
+      showSection('overview');
+    };
   </script>
 </body>
 </html>
