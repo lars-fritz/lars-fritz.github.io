@@ -1,0 +1,10 @@
+<h3>What is crypto?</h3>
+<p>Cryptocurrencies are digital or virtual currencies that leverage cryptographic techniques to secure transactions and control the creation of new units. Unlike traditional currencies, which are regulated by central authorities, cryptocurrencies operate on decentralized networks based on blockchain technology. The decentralized nature provides transparency, security, and freedom from centralized control, making them attractive for various applications.</p>
+<figure style="float: left; width: 50%; margin-right: 15px; text-align: center;">
+  <img src="https://raw.githubusercontent.com/lars-fritz/lars-fritz.github.io/main/pics/crypto/cryptocurrencies.avif" alt="Cryptocurrency Overview" style="width: 100%; height: auto;">
+  <figcaption style="font-size: 0.9em; color: #555;">
+    Image Source: <a href="https://www.ft.com/content/2ce706c4-9c59-415c-9591-0e7d6502a08b" target="_blank">Financial Times</a>
+  </figcaption>
+</figure>
+<p>Bitcoin, launched in 2009, was the first cryptocurrency and remains the most well-known. However, thousands of alternative cryptocurrencies (altcoins) have emerged since, offering different features and use cases. Cryptocurrencies like Ethereum, for example, introduced smart contracts, which are self-executing contracts where the terms of the agreement are directly written into code.</p>
+<p>People use cryptocurrencies for various reasons, including privacy, low transaction costs, and the ability to bypass traditional financial systems. Some see them as a hedge against inflation or as an investment vehicle. With the rise of decentralized finance (DeFi) and non-fungible tokens (NFTs), cryptocurrencies are now playing a larger role in the broader financial ecosystem.</p>
