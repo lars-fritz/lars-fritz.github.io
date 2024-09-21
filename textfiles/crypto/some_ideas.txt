@@ -1,0 +1,2 @@
+<h3>Some Ideas</h3>
+<p>Recently, I played around with the idea of having a Balancer-style pool that pairs three assets in a concentrated liquidity fashion. While this idea seems beyond reasonable in a Uniswap v3 style setting, hooks in Uniswap v4 might offer a viable option to its realization. For more details, see <a href="https://github.com/lars-fritz/lars-fritz.github.io/raw/4caa25aadb66a63ee3b7bbe2c84202c16f15c147/documents/crypto/threepool.pdf" target="_blank">here</a>.</p>
