@@ -1,4 +1,4 @@
-      <h3 id="research">Research</h3>
+      <h3>Research</h3>
     <p>
         Throughout the last two years, it has become increasingly clear that DeFi’s biggest problem to solve is loss-vs-rebalancing (LVR). LVR refers to the opportunity cost incurred by liquidity providers in automated market makers (AMMs) when compared to an ideal rebalancing strategy. It quantifies the difference between the value of the liquidity pool and the value that would have been achieved through perfect rebalancing of assets in response to price changes.
     </p>
