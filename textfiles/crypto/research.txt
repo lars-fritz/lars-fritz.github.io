@@ -14,3 +14,6 @@
       <p> Recently, we started to look into the arbitrage dynamics of Uniswap v2 pools and how they get modified by fees. We find strong evidence for the usefulness of not only dynamical but also asymmetric fees. The results of our studies are available on the arxiv, see <a href="https://arxiv.org/abs/2404.03976" target="_blank">Research Paper 1</a> and
 <a href="https://arxiv.org/abs/2406.12417" target="_blank">Research Paper 2</a>. Together with Abe Alexander (specialist in economy and data science) I have started a service that allows companies to get in touch with us so we can provide tailor made solutions to your problems.
   <p>
+<a href="https://mybinder.org/v2/gh/lars-fritz/lars-fritz.github.io/HEAD?labpath=https%3A%2F%2Fgithub.com%2Flars-fritz%2Flars-fritz.github.io%2Fblob%2Fmain%2Fcodes%2Fcrypto%2Fnoveldex.ipynb">
+   <img src="https://mybinder.org/badge_logo.svg" alt="Run on Binder">
+</a>
