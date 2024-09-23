@@ -64,7 +64,8 @@
     .content-wrapper {
       display: flex;
       justify-content: center;
-      margin-left: 200px; /* Account for the fixed menu */
+      margin-left: 220px; /* Account for the fixed menu */
+      padding: 20px; /* Added padding for better spacing */
     }
 
     /* Main container styling */
@@ -189,12 +190,12 @@
     <div>
       <h2>Menu</h2>
       <ul>
-        <li><a onclick="showSection('CM')">What is Condensed matter physics?</a></li>        
-        <li><a onclick="showSection('et')">Electronic transport</a></li>
-        <li><a onclick="showSection('ts')">Topological systems</a></li>
-        <li><a onclick="showSection('qi')">Quantum impurities</a></li>
-        <li><a onclick="showSection('ss')">Spin systems</a></li>
-        <li><a onclick="showSection('sc')">Strongly correlated</a></li>        
+        <li><a onclick="showSection('CM')">What is Condensed Matter Physics?</a></li>        
+        <li><a onclick="showSection('et')">Electronic Transport</a></li>
+        <li><a onclick="showSection('ts')">Topological Systems</a></li>
+        <li><a onclick="showSection('qi')">Quantum Impurities</a></li>
+        <li><a onclick="showSection('ss')">Spin Systems</a></li>
+        <li><a onclick="showSection('sc')">Strongly Correlated</a></li>        
       </ul>
     </div>
     
@@ -207,23 +208,24 @@
       </a>
       <a href="https://github.com/yourusername" target="_blank" title="GitHub">
         <i class="fab fa-github"></i>
-        <a href="https://scholar.google.com" target="_blank" title="Google Scholar">
-  <i class="fas fa-graduation-cap"></i>
-</a>
-<a href="https://orcid.org" target="_blank" title="ORCID">
-  <i class="fas fa-id-badge"></i>
       </a>
+      <a href="https://scholar.google.com" target="_blank" title="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+      <a href="https://orcid.org" target="_blank" title="ORCID">
+        <i class="fas fa-id-badge"></i>
       </a>
     </div>
   </div>
 
   <div class="content-wrapper">
     <div class="container">
-      <div id="overview" class="content-section"></div>
-      <div id="market-makers" class="content-section"></div>
-      <div id="research" class="content-section"></div>
-      <div id="educational-texts" class="content-section"></div>
-      <div id="some-ideas" class="content-section"></div>
+      <div id="CM" class="content-section"></div>
+      <div id="et" class="content-section"></div>
+      <div id="ts" class="content-section"></div>
+      <div id="qi" class="content-section"></div>
+      <div id="ss" class="content-section"></div>
+      <div id="sc" class="content-section"></div>
     </div>
   </div>
 
@@ -241,12 +243,13 @@
         .catch(error => console.error('Error loading content:', error));
     }
 
-    // Load content for each section from the 'content' subfolder
+    // Load content for each section
+    loadContent('textfiles/quantum/CM.txt', 'CM');
     loadContent('textfiles/quantum/et.txt', 'et');
-    loadContent('textfiles/quantum/market_makers.txt', 'market-makers');
-    loadContent('textfiles/crypto/research.txt', 'research');
-    loadContent('textfiles/crypto/educational_texts.txt', 'educational-texts');
-    loadContent('textfiles/crypto/some_ideas.txt', 'some-ideas');
+    loadContent('textfiles/quantum/ts.txt', 'ts');
+    loadContent('textfiles/quantum/qi.txt', 'qi');
+    loadContent('textfiles/quantum/ss.txt', 'ss');
+    loadContent('textfiles/quantum/sc.txt', 'sc');
 
     function toggleTheme() {
       const body = document.body;
@@ -264,11 +267,10 @@
       selectedSection.classList.add('active');
     }
 
-    // Show the "What is crypto?" section by default
+    // Show the "What is Condensed Matter Physics?" section by default
     window.onload = function() {
-      showSection('overview');
+      showSection('CM');
     };
   </script>
 </body>
 </html>
-
