@@ -38,11 +38,13 @@
     .menu h2 {
       margin-bottom: 20px;
       font-size: 1.5em;
+      text-align: center; /* Center the menu title */
     }
 
     .menu ul {
       list-style: none;
       padding: 0;
+      text-align: center; /* Center menu items */
     }
 
     .menu li {
@@ -54,10 +56,13 @@
       color: #333;
       transition: color 0.3s;
       cursor: pointer;
+      display: block; /* Ensure links take full width */
+      padding: 10px; /* Add padding for clickable area */
     }
 
     .menu a:hover {
       color: #0073b1;
+      background-color: #f0f0f0; /* Add hover background */
     }
 
     /* Main content wrapper */
@@ -80,13 +85,14 @@
       text-align: center;
     }
 
-    /* Styling for text section */
-    .text-section {
-      margin-bottom: 40px;
+    /* Hide all sections by default */
+    .content-section {
+      display: none;
     }
 
-    .text-section p {
-      margin-bottom: 20px;
+    /* Show the active section */
+    .content-section.active {
+      display: block;
     }
 
     /* Social media icons */
@@ -101,56 +107,6 @@
       margin: 0 10px;
       font-size: 30px;
       color: #333;
-    }
-
-    /* Day theme styles */
-    body.day {
-      background-color: #ffffff;
-      color: #333;
-    }
-
-    body.day .menu {
-      background-color: #f0f0f0;
-      color: #333;
-    }
-
-    body.day h1, body.day h2, body.day h3 {
-      color: #212121;
-    }
-
-    body.day a {
-      color: #0073b1;
-    }
-
-    /* Night theme styles */
-    body.night {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
-    }
-
-    body.night .menu {
-      background-color: #333;
-      color: #e0e0e0;
-    }
-
-    body.night .menu a {
-      color: #e0e0e0;
-    }
-
-    body.night .menu a:hover {
-      color: #0073b1;
-    }
-
-    body.night h1, body.night h2, body.night h3 {
-      color: #e0e0e0;
-    }
-
-    body.night a {
-      color: #4db8ff;
-    }
-
-    body.night .social-icons a {
-      color: #e0e0e0;
     }
 
     /* Theme toggle button */
@@ -168,36 +124,43 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1000;
     }
-    
+
     .theme-toggle:hover {
       background-color: #084482;
     }
 
-    /* Hide all sections by default */
-    .content-section {
-      display: none;
+    /* Day theme styles */
+    body.day {
+      background-color: #ffffff;
+      color: #333;
     }
 
-    /* Show the active section */
-    .content-section.active {
-      display: block;
+    body.day .menu {
+      background-color: #f0f0f0;
+    }
+
+    /* Night theme styles */
+    body.night {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    body.night .menu {
+      background-color: #333;
     }
   </style>
 </head>
 <body class="day">
   <div class="menu">
-    <div>
-      <h2>Menu</h2>
-      <ul>
-        <li><a onclick="showSection('CM')">What is Condensed Matter Physics?</a></li>        
-        <li><a onclick="showSection('et')">Electronic Transport</a></li>
-        <li><a onclick="showSection('ts')">Topological Systems</a></li>
-        <li><a onclick="showSection('qi')">Quantum Impurities</a></li>
-        <li><a onclick="showSection('ss')">Spin Systems</a></li>
-        <li><a onclick="showSection('sc')">Strongly Correlated</a></li>        
-      </ul>
-    </div>
-    
+    <h2>Menu</h2>
+    <ul>
+      <li><a onclick="showSection('CM')">What is Condensed Matter Physics?</a></li>        
+      <li><a onclick="showSection('et')">Electronic Transport</a></li>
+      <li><a onclick="showSection('ts')">Topological Systems</a></li>
+      <li><a onclick="showSection('qi')">Quantum Impurities</a></li>
+      <li><a onclick="showSection('ss')">Spin Systems</a></li>
+      <li><a onclick="showSection('sc')">Strongly Correlated</a></li>        
+    </ul>
     <div class="social-icons">
       <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
         <i class="fab fa-twitter"></i>
