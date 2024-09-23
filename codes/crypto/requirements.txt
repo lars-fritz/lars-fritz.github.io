@@ -1,4 +1,14 @@
-matplotlib
-numpy
-ipywidgets
-voila
+# Basic requirements
+numpy>=1.20.0
+matplotlib>=3.3.0
+pandas>=1.2.0
+scikit-learn>=0.24.0
+
+# For interactive widgets in Jupyter
+ipywidgets>=7.6.0
+
+# Voila for rendering notebooks as dashboards
+voila>=0.2.0
+
+# Any other libraries you might need
+# library-name>=version
