@@ -1,1 +1,47 @@
+<h3> Hydrodynamic transport in electronic systems </h3>
 
+    <p>
+        There are very few 'universal truths' in physics, but hydrodynamic behavior is one of them. The motion of any substance 
+        at sufficiently high temperatures follows the laws of hydrodynamics. Originally, hydrodynamics described the viscous 
+        motion of water, but its principles apply to a much broader range of settings: from the physics of stars and 
+        interstellar matter to the magnetohydrodynamics of plasmas, and even the dynamics of soft active matter.
+    </p>
+    <p>
+        Hydrodynamic principles are also encountered in applied disciplines, including engineering: ocean dynamics, weather 
+        modeling, aviation, gas flow through pipes, and even traffic flow, to name a few examples. Remarkably, these principles 
+        extend even to the physics of the early universe: at energies high enough to melt protons and neutrons, their constituent 
+        quarks form the quark-gluon plasma. When a particle collider creates this state, it exists for only a fraction of a second, 
+        but during that brief moment, it behaves according to the laws of fluid mechanics.
+    </p>
+    <p>
+        The reason for this almost universal applicability lies in the underlying simplicity and generality of hydrodynamics. 
+        The foundation of hydrodynamics is the relaxation of conserved quantities towards local equilibrium. These conserved 
+        quantities are fundamental: mass, momentum, and energy (and charge in charged systems).
+    </p>
+    <p>
+        In classical hydrodynamics, flow phenomena are described by a set of differential equations, including the continuity 
+        equations and the <strong>Navier-Stokes equation</strong>. The role of the Navier-Stokes equation in fluid motion 
+        is comparable to the linear Maxwell equations in electrodynamics. Together with appropriate boundary conditions, 
+        these equations describe all aspects of viscous flow. While they are basic, they are non-linear, and solving them is 
+        highly complex. In fact, proving some properties of their solutions is one of the seven <em>Millennium Prize Problems 
+        in Mathematics</em>.
+    </p>
+    <p>
+        A key characteristic of fluids is their viscosity: for example, water flows faster than honey due to its lower viscosity 
+        despite having a similar density. Some classical fluids are so viscous that they appear solid. For instance, the viscosity 
+        of pitch is \(10^{11}\) times that of water. In the quantum world, viscous liquids are found in strongly interacting 
+        systems: the quark-gluon plasma is estimated to have a dynamic viscosity \(10^{16}\) times that of water, rivaling glass. 
+        Interestingly, the ratio of dynamic viscosity to density in water and the quark-gluon plasma is comparable, as their densities 
+        are enhanced by similar factors.
+    </p>
+    <p>
+        In the context of condensed matter physics, hydrodynamics has a rich history of success. It is applied in the description 
+        of strongly interacting one-dimensional systems, spin-excitations in insulators, and the dynamics near quantum critical points. 
+        As a general rule, hydrodynamic behavior is most commonly encountered in strongly correlated systems.
+    </p>
+    <p>
+        Metals, on the other hand, fall into the category of weakly correlated systems. However, they are also the systems where 
+        we most often talk about the 'flow' of charges and electrical currents. Until quite recently, this 'flow' was fundamentally 
+        different from the flow of water, more resembling the erratic movement of balls on a tilted nail board, with nails in random 
+        positions.
+    </p>
