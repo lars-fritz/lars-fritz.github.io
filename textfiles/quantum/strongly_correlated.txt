@@ -18,5 +18,9 @@
     </p>
     <p>
         The field of strong correlations, however, deals with systems where such a simple 
-        description does not exist — or, at least, has not yet been discovered.
+        description does not exist — or, at least, has not yet been discovered. Strongly correlated electronic systems are systems where the interactions between electrons are so significant that they cannot be described by conventional theories, such as those treating electrons as nearly independent particles. In these systems, the behavior of one electron is deeply influenced by the presence and motion of others, leading to complex collective phenomena.
+
+Examples of strongly correlated systems include high-temperature superconductors, where electrons pair up and flow without resistance, and Mott insulators, which, despite having free electrons, resist electrical conduction due to strong electron repulsion. The study of these systems is crucial because their properties often defy traditional models, leading to new phases of matter and potential applications in quantum computing and advanced materials science.
+
+Understanding and describing strongly correlated systems require sophisticated approaches, such as many-body physics and quantum field theory, to capture the richness of their behavior, including exotic states like quantum spin liquids or non-Fermi liquids. This makes them a fascinating and active area of research in condensed matter physics.
     </p>
