@@ -1,1 +1,20 @@
+<h3>Strongly correlated electronic systems</h3>
 
+ <p>
+        By its very definition, the quantum many-body problem is strongly interacting. 
+        When \(10^{24}\) particles come together in a tight space, they are organized at distances 
+        comparable to the most elementary atomic length scale: the Bohr radius. As a result, 
+        any problem in condensed matter physics begins as a strongly correlated problem where 
+        many particles interact.
+    </p>
+    <p>
+        Despite this inherent complexity, the concept of non-interacting particles has proven to 
+        be a highly successful framework for describing a wide variety of systems, including 
+        metals, topological insulators, and many others. This is due to a phenomenon known as 
+        <strong>emergence</strong>: out of the interaction of many particles, a simpler 
+        collective behavior can emerge.
+    </p>
+    <p>
+        The field of strong correlations, however, deals with systems where such a simple 
+        description does not exist — or, at least, has not yet been discovered.
+    </p>
