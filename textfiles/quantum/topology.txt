@@ -1,1 +1,26 @@
+<h3>Topology in condensed matter systems</h3>
 
+    <p>
+        Topology plays a central role in condensed matter physics by describing properties of systems that remain 
+        unchanged under continuous transformations, such as stretching or bending, as long as no tearing or breaking occurs. 
+        This concept applies broadly across different phenomena, with <strong>topological defects</strong> and 
+        <strong>topological insulators</strong> serving as two particular examples.
+    </p>
+    <p>
+        <strong>Topological defects</strong> are disruptions in ordered systems where the usual arrangement breaks down 
+        in a controlled way. Examples include vortices in superconductors or dislocations in crystals, where the structure 
+        cannot simply be undone by small changes. The stability of these defects is protected by the system’s topological 
+        properties, making them robust features that cannot be easily removed.
+    </p>
+    <p>
+        On the other hand, <strong>topological insulators</strong> are materials that, while insulating in the bulk, 
+        conduct electricity along their surfaces or edges. The most famous example is the <strong>quantum Hall effect</strong>, 
+        where electrons move in edge states that are immune to scattering by impurities or disorder. This edge conduction 
+        is topologically protected, meaning it arises from the material’s overall structure, not the specifics of its 
+        composition or defects.
+    </p>
+    <p>
+        These are just two manifestations of topology in condensed matter systems. Topological phenomena provide profound 
+        insights into the behavior of materials, leading to the discovery of exotic states of matter that are often immune 
+        to disturbances which would disrupt more conventional materials.
+    </p>
