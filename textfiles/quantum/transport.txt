@@ -5,13 +5,13 @@
         at sufficiently high temperatures follows the laws of hydrodynamics. Originally, hydrodynamics described the viscous 
         motion of water, but its principles apply to a much broader range of settings: from the physics of stars and 
         interstellar matter to the magnetohydrodynamics of plasmas, and even the dynamics of soft active matter.
+    <figure style="float: left; width: 50%; margin-right: 15px; text-align: center;">
+  <img src="https://raw.githubusercontent.com/lars-fritz/lars-fritz.github.io/main/pics/quantum/modes.png" alt="Cryptocurrency Overview" style="width: 100%; height: auto;">
+  <figcaption style="font-size: 0.9em; color: #555;">
+    Left: the tar drop experiment.
+  </figcaption>
+</figure>
     </p>
-    
-    <!-- Including the image here -->
-    <p>
-        <img src="https://github.com/lars-fritz/lars-fritz.github.io/tree/main/pics/quantum/modes.png" alt="Hydrodynamic Modes in Electronic Systems" width="600">
-    </p>
-
     <p>
         Hydrodynamic principles are also encountered in applied disciplines, including engineering: ocean dynamics, weather 
         modeling, aviation, gas flow through pipes, and even traffic flow, to name a few examples. Remarkably, these principles 
