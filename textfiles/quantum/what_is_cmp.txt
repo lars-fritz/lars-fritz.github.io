@@ -1,4 +1,6 @@
 <h3>What is condensed matter physics?</h3>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <p>
         Condensed matter physics is a field that bridges the realms of quantum mechanics and statistical physics.
         In doing so, it attempts the seemingly impossible: solving a quantum mechanics problem for
